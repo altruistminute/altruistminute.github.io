@@ -51,7 +51,7 @@
     <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/optimizely-60318eedebcf.js"></script>
     <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/signup-redesign-a64efd6fdabb.js"></script>
     <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/signup-e603ed546039.js"></script>
-    <title>AltruisteMinute · Services</title>
+    <title>AltruisteMinute · Dev Site Web</title>
     <meta name="route-pattern" content="/signup(.:format)">
     <meta name="current-catalog-service-hash" content="507e874288c76f570a246d72cfafc881216cd6973006f4c917f50398aef5ca3d">
     <meta name="request-id" content="601B:5DBE:291A231:2A8C166:6406E74A" data-pjax-transient="true"/>
@@ -115,8 +115,8 @@
     <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
     <meta name="browser-optimizely-client-errors-url" content="https://api.github.com/_private/browser/optimizely_client/errors">
     <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
-    <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
-    <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+    <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://altruistminute.github.io/favicon.png">
+    <link rel="icon" class="js-site-favicon" type="image/png" href="https://altruistminute.github.io/favicon.png">
     <meta name="theme-color" content="#1e2327">
     <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
   </head>
@@ -132,7 +132,7 @@
           <div class="d-flex flex-justify-between flex-items-center width-full">
           <a href="https://altruistminute.github.io/" aria-label="Homepage">
           <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github color-fg-on-emphasis">
-          <image href="images/logo.svg" height="32" width="32" />
+            <image href="images/logo.svg" height="32" width="32" />
           </svg>
           </a>
 
@@ -188,9 +188,14 @@
               <div
                 class="m-4 p-4 f4 color-shadow-small bg-gray-800-mktg rounded-2 signup-content-container"
                 >
+                <div>
+                  <label for="email" class="text-mono signup-text-prompt">
+                  <br>Dev Site Web<span class="sr-only">e.g. monalisa@gmail.com</span>
+                  </label>
+                </div>
                 <h1 class="sr-only">Nos services arrivent bientôt ! Rejoingnez notre communauté pour être informé.</h1>
                 <typing-effect
-                  data-lines='["Nos services :"]'
+                  data-lines='["Développement de votre Site Web professionnel."]'
                   data-continue-to="email-container"
                   class="js-signup-typed-welcome"
                   >
@@ -203,65 +208,32 @@
                     class="typing-effect-cursor"
                     >|</span>
                 </typing-effect>
+                <div>
+                  <label for="email" class="text-mono signup-text-prompt">
+                  <br>Procédé<span class="sr-only">e.g. monalisa@gmail.com</span>
+                  </label>
+                </div>
+                <typing-effect
+                  data-lines='["Contactez-nous par email altruistminute@gmail.com."]'
+                  data-continue-to="email-container"
+                  class="js-signup-typed-welcome"
+                  >
+                  <span
+                    data-target="typing-effect.content"
+                    class="text-mono text-gray-mktg"
+                    ></span>
+                  <span
+                    data-target="typing-effect.cursor"
+                    class="typing-effect-cursor"
+                    >|</span>
+                </typing-effect>
+
                 <noscript>
                   <div class="my-4 text-mono color-fg-attention">
                     GitHub requires JavaScript enabled to sign up for our captcha. Please enable JavaScript.
                   </div>
                 </noscript>
                 <!-- '"` --><!-- </textarea></xmp> --></option></form>
-                <div
-                  id="email-container"
-                  data-step-state="active"
-                  hidden
-                  >
-                  <div>
-                    <li>
-                      <a href="https://altruistminute.github.io/devlogiciel.html">
-                        Développement de votre logiciel ou application
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://altruistminute.github.io/devsiteweb.html">
-                        Développement de votre Site Web
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://altruistminute.github.io/voixoff.html">
-                        Voix Off : réalisation de la voix off de votre vidéo
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://manewsletter.github.io/">
-                        MaNewsletter : votre page de capture emails gratuite en quelques minutes
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://altruistminute.github.io/formation_capture_email_zero.html">
-                        Formation CaptureEmailZero : Capturez des emails pour 0€
-                      </a>
-                    </li>
-                    <label for="email" class="text-mono signup-text-prompt">
-                    <br>Être informé de nos nouveaux services<span class="sr-only">e.g. monalisa@gmail.com</span>
-                    </label>
-                  </div>
-                  <form class="position-relative js-octocaptcha-parent" action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
-                    <div class="d-flex flex-items-center flex-column flex-sm-row">
-                      <div class="d-flex flex-items-center width-full">
-                        <span class="signup-continue-prompt mr-2" aria-hidden="true"></span>
-                        <input id="email" type="email" name="email" class="js-continue-input js-continue-focus-target signup-input form-control input-block flex-1 border-0 rounded-0 p-0 box-shadow-none color-text-white f4 text-mono",required="required" />
-												<input type="hidden" name="_template" value="table">
-												<input type="hidden" name="_captcha" value="false">
-												<input type="hidden" name="_next" value="https://altruistminute.github.io/thankyou.html">
-                      </div>
-                      <button
-                        type="submit"
-												class="js-continue-button form-control px-3 width-full width-sm-auto mt-4 mt-sm-0"
-                        >
-                      Rejoindre
-                      </button>
-                    </div>
-                  </form>
-                </div>
               </div>
               <div class="js-continue-hint-container mx-4 px-4 f4 font-mktg text-gray-mktg">
                 <p id="email-err" data-hint-for="email" role="alert" aria-atomic="true"></p>
