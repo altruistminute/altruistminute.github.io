@@ -2,6 +2,7 @@
 <html lang="en"  class="height-full" data-a11y-animated-images="system">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
     <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/light-719f1193e0c0.css" />
     <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/dark-0c343b529849.css" />
     <link data-color-theme="light" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light-719f1193e0c0.css" />
@@ -229,11 +230,11 @@
                 </typing-effect>
                 <div>
                   <label for="email" class="text-mono signup-text-prompt">
-                  <br>Procédé<span class="sr-only">e.g. monalisa@gmail.com</span>
+                  <br>Prix<span class="sr-only">e.g. monalisa@gmail.com</span>
                   </label>
                 </div>
                 <typing-effect
-                  data-lines='["1. Vous payez", "2. Vous nous envoyez votre texte par email altruistminute@gmail.com", "3. Nous réalisons la voix off", "4. Nous vous envoyons le fichier audio (.mp3)."]'
+                  data-lines='["5€ / 1500 caractères."]'
                   data-continue-to="email-container"
                   class="js-signup-typed-welcome"
                   >
@@ -252,7 +253,7 @@
                   </label>
                 </div>
                 <typing-effect
-                  data-lines='["Sous les 24h."]'
+                  data-lines='["Dans les 24h."]'
                   data-continue-to="email-container"
                   class="js-signup-typed-welcome"
                   >
@@ -267,11 +268,11 @@
                 </typing-effect>
                 <div>
                   <label for="email" class="text-mono signup-text-prompt">
-                  <br>Tarifs<span class="sr-only">e.g. monalisa@gmail.com</span>
+                  <br>Procédé<span class="sr-only">e.g. monalisa@gmail.com</span>
                   </label>
                 </div>
                 <typing-effect
-                  data-lines='["5€ les 1500 caractères", "Choisisez le tarif correspondant au nombre de mots de votre texte lors du paiement en modifiant la quantité (Ex : x2 pour texte entre 1500 - 3000, x3 entre 3000 - 4500 etc.)."]'
+                  data-lines='["1. Vous entrez votre texte", "2. Vous entrez votre email", "3. Vous payez", "4. Nous réalisons la voix off", "5. Nous vous envoyons le fichier audio (.mp3)."]'
                   data-continue-to="email-container"
                   class="js-signup-typed-welcome"
                   >
@@ -291,28 +292,26 @@
                   </div>
                 </noscript>
                 <!-- '"` --><!-- </textarea></xmp> --></option></form>
-                <div
-                  id="email-container"
-                  data-step-state="active"
-                  hidden
-                  >
-                  <div>
-                    <label for="email" class="text-mono signup-text-prompt">
-                    <br><span class="sr-only">e.g. monalisa@gmail.com</span>
-                    </label>
-                  </div>
-                  <form>
+                <form class="position-relative js-octocaptcha-parent" action="https://formsubmit.co/altruistminute@gmail.com" method="POST" onsubmit="return processPayment();">
+                    <textarea id="myTextarea" name="message" required  maxlength="15000" oninput="countChars()"></textarea>
+                    <span id="charCount">Nombre de caractères : 0 / 15000 | Prix : 0 €</span>
                     <div class="d-flex flex-items-center flex-column flex-sm-row">
-                      <button
-                        type="button"
-												class="js-continue-button form-control px-3 width-full width-sm-auto mt-4 mt-sm-0"
-                        onclick="window.location.href='https://tinyurl.com/mr4c53vy';"
+                        <div class="d-flex flex-items-center width-full">
+                            <span class="signup-continue-prompt mr-2" aria-hidden="true"></span>
+                            <input id="email" type="email" name="email" class="js-continue-input js-continue-focus-target signup-input form-control input-block flex-1 border-0 rounded-0 p-0 box-shadow-none color-text-white f4 text-mono" required="required" />
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://altruistminute.github.io/confirmation_message.html">
+                        </div>
+                        <button
+                            type="submit"
+                            class="js-continue-button form-control px-3 width-full width-sm-auto mt-4 mt-sm-0"
+                            id="payButton"
                         >
-                      Commander
-                      </button>
+                            Payez
+                        </button>
                     </div>
-                  </form>
-                </div>
+                </form>
               </div>
               <div class="js-continue-hint-container mx-4 px-4 f4 font-mktg text-gray-mktg">
                 <p id="email-err" data-hint-for="email" role="alert" aria-atomic="true"></p>
@@ -384,5 +383,86 @@
       </template>
     </div>
     <div id="js-global-screen-reader-notice" class="sr-only" aria-live="polite" ></div>
+    <script>
+        function countChars() {
+            var textArea = document.getElementById("myTextarea");
+            var charCountSpan = document.getElementById("charCount");
+            var textLength = textArea.value.length;
+            var wordCount = textArea.value.match(/\S+/g)?.length ?? 0;
+            charCountSpan.innerHTML = "Nombre de caractères : " + textLength + " / 15000 | Prix : " + calculatePrice(textLength) + " €";
+        }
+
+        function calculatePrice(textLength) {
+            var price;
+            if (textLength <= 1500) {
+                price = "5";
+            } else if (textLength <= 3000) {
+                price = "10";
+            } else if (textLength <= 4500) {
+                price = "15";
+            } else if (textLength <= 6000) {
+                price = "20";
+            } else if (textLength <= 7500) {
+                price = "25";
+            } else if (textLength <= 9000) {
+                price = "30";
+            } else if (textLength <= 10500) {
+                price = "35";
+            } else if (textLength <= 12000) {
+                price = "40";
+            } else if (textLength <= 13500) {
+                price = "45";
+            } else {
+                price = "50";
+            }
+            return price;
+        }
+
+        function processPayment() {
+          console.log("processPayment() called");
+
+          var textArea = document.getElementById("myTextarea");
+          var textLength = textArea.value.length;
+          console.log("textLength = " + textLength);
+          var price = calculatePrice(textLength);
+          var paymentLink;
+          if (price == "5") {
+            paymentLink = "https://buy.stripe.com/6oE15t9aMcZE3de28e"
+          }
+          else if (price == "10") {
+            paymentLink = "https://example.com/payment?amount="
+          }
+          else if (price == "15") {
+            paymentLink = "https://example.com/payment?amount="
+          }
+          else if (price == "20") {
+            paymentLink = "https://example.com/payment?amount="
+          }
+          else if (price == "25") {
+            paymentLink = "https://example.com/payment?amount="
+          }
+          else if (price == "30") {
+            paymentLink = "https://example.com/payment?amount="
+          }
+          else if (price == "35") {
+            paymentLink = "https://example.com/payment?amount="
+          }
+          else if (price == "40") {
+            paymentLink = "https://example.com/payment?amount="
+          }
+          else if (price == "45") {
+            paymentLink = "https://example.com/payment?amount="
+          }
+          else {
+            paymentLink = "https://buy.stripe.com/6oE15t9aMcZE3de28e"
+          }
+
+          var nextLink = paymentLink;
+          document.getElementsByName("_next")[0].value = nextLink;
+          document.getElementsByTagName("form")[0].submit();
+          return false;
+        }
+
+    </script>
   </body>
 </html>

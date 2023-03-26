@@ -2,7 +2,6 @@
 <html lang="en"  class="height-full" data-a11y-animated-images="system">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
     <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/light-719f1193e0c0.css" />
     <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/dark-0c343b529849.css" />
     <link data-color-theme="light" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light-719f1193e0c0.css" />
@@ -52,7 +51,7 @@
     <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/optimizely-60318eedebcf.js"></script>
     <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/signup-redesign-a64efd6fdabb.js"></script>
     <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/signup-e603ed546039.js"></script>
-    <title>AltruisteMinute · Dev logiciel</title>
+    <title>AltruistMinute · Confirmation</title>
     <meta name="route-pattern" content="/signup(.:format)">
     <meta name="current-catalog-service-hash" content="507e874288c76f570a246d72cfafc881216cd6973006f4c917f50398aef5ca3d">
     <meta name="request-id" content="601B:5DBE:291A231:2A8C166:6406E74A" data-pjax-transient="true"/>
@@ -71,7 +70,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="GitHub is where people build software. More than 100 million people use GitHub to discover, fork, and contribute to over 330 million projects.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
-    <link rel="fluid-icon" href="https://altruistminute.github.io/fluidicon.png" title="Altruist">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="Altruist">
     <meta property="fb:app_id" content="1401488693436528">
     <meta name="apple-itunes-app" content="app-id=1477376905" />
     <meta property="og:url" content="https://github.com">
@@ -133,11 +132,12 @@
           <div class="d-flex flex-justify-between flex-items-center width-full">
           <a href="https://altruistminute.github.io/" aria-label="Homepage">
           <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github color-fg-on-emphasis">
-            <image href="images/logo.svg" height="32" width="32" />
+          <image href="images/logo.svg" height="32" width="32" />
           </svg>
           </a>
 
           <div class="font-mktg">
+            <span class="mr-2 text-gray-mktg hide-sm">Déjà inscrit ?</span>
             <a href="https://altruistminute.github.io/about.html" class="color-fg-on-emphasis">
               Présentation ·
             </a>
@@ -189,14 +189,9 @@
               <div
                 class="m-4 p-4 f4 color-shadow-small bg-gray-800-mktg rounded-2 signup-content-container"
                 >
-                <div>
-                  <label for="email" class="text-mono signup-text-prompt">
-                  <br>Dev logiciel<span class="sr-only">e.g. monalisa@gmail.com</span>
-                  </label>
-                </div>
-                <h1 class="sr-only">Nos services arrivent bientôt ! Rejoingnez notre communauté pour être informé.</h1>
+                <h1 class="sr-only">Merci pour votre confiance. Bienvenue dans la communauté AltruistMinute !</h1>
                 <typing-effect
-                  data-lines='["Développement de votre logiciel ou application."]'
+                  data-lines='["Nous avons bien récu votre message.", "Nous reviendrons vers vous dans les plus brefs délais."]'
                   data-continue-to="email-container"
                   class="js-signup-typed-welcome"
                   >
@@ -209,50 +204,12 @@
                     class="typing-effect-cursor"
                     >|</span>
                 </typing-effect>
-                <div>
-                  <label for="email" class="text-mono signup-text-prompt">
-                  <br>Procédé<span class="sr-only">e.g. monalisa@gmail.com</span>
-                  </label>
-                </div>
-                <typing-effect
-                  data-lines='["Dites-nous tout :"]'
-                  data-continue-to="email-container"
-                  class="js-signup-typed-welcome"
-                  >
-                  <span
-                    data-target="typing-effect.content"
-                    class="text-mono text-gray-mktg"
-                    ></span>
-                  <span
-                    data-target="typing-effect.cursor"
-                    class="typing-effect-cursor"
-                    >|</span>
-                </typing-effect>
-
                 <noscript>
                   <div class="my-4 text-mono color-fg-attention">
                     GitHub requires JavaScript enabled to sign up for our captcha. Please enable JavaScript.
                   </div>
                 </noscript>
                 <!-- '"` --><!-- </textarea></xmp> --></option></form>
-                <form class="position-relative js-octocaptcha-parent" action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
-                  <textarea id="message" name="message" required></textarea>
-                  <div class="d-flex flex-items-center flex-column flex-sm-row">
-                    <div class="d-flex flex-items-center width-full">
-                      <span class="signup-continue-prompt mr-2" aria-hidden="true"></span>
-                      <input id="email" type="email" name="email" class="js-continue-input js-continue-focus-target signup-input form-control input-block flex-1 border-0 rounded-0 p-0 box-shadow-none color-text-white f4 text-mono",required="required" />
-                      <input type="hidden" name="_template" value="table">
-                      <input type="hidden" name="_captcha" value="false">
-                      <input type="hidden" name="_next" value="https://altruistminute.github.io/confirmation_message.html">
-                    </div>
-                    <button
-                      type="submit"
-                      class="js-continue-button form-control px-3 width-full width-sm-auto mt-4 mt-sm-0"
-                      >
-                    Soumettre
-                    </button>
-                  </div>
-                </form>
               </div>
               <div class="js-continue-hint-container mx-4 px-4 f4 font-mktg text-gray-mktg">
                 <p id="email-err" data-hint-for="email" role="alert" aria-atomic="true"></p>
@@ -268,11 +225,6 @@
             >
         </main>
       </div>
-      <!--
-      <iframe width="420" height="315" src="https://www.youtube-nocookie.com/embed/g-4Js4fFL7w"
-      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-      </iframe>
-      -->
       <div id="ajax-error-message" class="ajax-error-message flash flash-error" hidden>
         <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
           <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>

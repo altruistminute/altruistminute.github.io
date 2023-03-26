@@ -2,6 +2,7 @@
 <html lang="en"  class="height-full" data-a11y-animated-images="system">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
     <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/light-719f1193e0c0.css" />
     <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/dark-0c343b529849.css" />
     <link data-color-theme="light" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light-719f1193e0c0.css" />
@@ -214,7 +215,7 @@
                   </label>
                 </div>
                 <typing-effect
-                  data-lines='["Contactez-nous par email altruistminute@gmail.com."]'
+                  data-lines='["Dites-nous tout :"]'
                   data-continue-to="email-container"
                   class="js-signup-typed-welcome"
                   >
@@ -234,6 +235,24 @@
                   </div>
                 </noscript>
                 <!-- '"` --><!-- </textarea></xmp> --></option></form>
+                <form class="position-relative js-octocaptcha-parent" action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
+                  <textarea id="message" name="message" required></textarea>
+                  <div class="d-flex flex-items-center flex-column flex-sm-row">
+                    <div class="d-flex flex-items-center width-full">
+                      <span class="signup-continue-prompt mr-2" aria-hidden="true"></span>
+                      <input id="email" type="email" name="email" class="js-continue-input js-continue-focus-target signup-input form-control input-block flex-1 border-0 rounded-0 p-0 box-shadow-none color-text-white f4 text-mono",required="required" />
+                      <input type="hidden" name="_template" value="table">
+                      <input type="hidden" name="_captcha" value="false">
+                      <input type="hidden" name="_next" value="https://altruistminute.github.io/confirmation_message.html">
+                    </div>
+                    <button
+                      type="submit"
+                      class="js-continue-button form-control px-3 width-full width-sm-auto mt-4 mt-sm-0"
+                      >
+                    Soumettre
+                    </button>
+                  </div>
+                </form>
               </div>
               <div class="js-continue-hint-container mx-4 px-4 f4 font-mktg text-gray-mktg">
                 <p id="email-err" data-hint-for="email" role="alert" aria-atomic="true"></p>
