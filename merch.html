@@ -111,7 +111,6 @@
     <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
     <meta name="theme-color" content="#1e2327">
     <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
-    <link rel="stylesheet" href="path/to/jquery.zoom.css">
   </head>
   <body class="logged-out env-production page-responsive header-overlay" style="word-wrap: break-word;">
     <div data-turbo-body class="logged-out env-production page-responsive header-overlay" style="word-wrap: break-word;">
@@ -257,6 +256,8 @@
     <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
     <script>
       $("#zoom_04").ezPlus();
+    </script>
+    <script>
       const today = new Date();
       today.setDate(today.getDate() + 1); // Set minimum date to tomorrow
       document.getElementById("date").setAttribute("min", today.toISOString().split('T')[0]);
