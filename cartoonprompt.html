@@ -318,17 +318,11 @@
       }
 
       // Initialisation du diaporama lors du chargement initial
-      initSwiper();
-
-      // Réinitialisation du diaporama lorsque la page est chargée à nouveau
-      window.addEventListener('pageshow', function(event) {
-        // Vérifie si la page est chargée depuis le cache
-        if (event.persisted) {
-          // Réinitialise le diaporama
-          initSwiper();
-        }
+      window.addEventListener('load', function() {
+        initSwiper();
       });
     </script>
+
     <script>
       const today = new Date();
       today.setDate(today.getDate() + 1); // Set minimum date to tomorrow
