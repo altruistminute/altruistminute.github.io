@@ -256,6 +256,19 @@
       </template>
     </div>
     <script>
+    // Sélectionnez les liens sur lesquels vous souhaitez rafraîchir la page
+    var links = document.querySelectorAll(".sub-nav-mktg-link");
+
+    // Parcourez chaque lien et ajoutez un gestionnaire d'événements click
+    links.forEach(function(link) {
+      link.addEventListener("click", function() {
+        // Rafraîchit la page
+        window.location.reload();
+      });
+    });
+    </script>
+
+    <script>
       const today = new Date();
       today.setDate(today.getDate() + 1); // Set minimum date to tomorrow
       document.getElementById("date").setAttribute("min", today.toISOString().split('T')[0]);
