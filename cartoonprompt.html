@@ -111,33 +111,6 @@
     <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
     <meta name="theme-color" content="#1e2327">
     <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <style>
-      .swiper-container {
-        width: 100%;
-        height: 512px;
-      }
-      .swiper-slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-      }
-      .swiper-slide img {
-        max-height: 100%;
-        width: auto;
-      }
-      .swiper-container {
-        position: relative;
-      }
-
-      .swiper-pagination {
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-    </style>
   </head>
   <body class="logged-out env-production page-responsive header-overlay" style="word-wrap: break-word;">
     <div data-turbo-body class="logged-out env-production page-responsive header-overlay" style="word-wrap: break-word;">
@@ -227,20 +200,7 @@
                   </form>
                 </div>
               </div>
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="images/cartoon/1.jpg" height="832"/></div>
-                  <div class="swiper-slide"><img src="images/cartoon/2.jpg" height="832"/></div>
-                  <div class="swiper-slide"><img src="images/cartoon/3.jpg" height="832"/></div>
-                  <div class="swiper-slide"><img src="images/cartoon/4.jpg" height="832"/></div>
-                  <div class="swiper-slide"><img src="images/cartoon/5.jpg" height="832"/></div>
-                  <div class="swiper-slide"><img src="images/cartoon/6.jpg" height="832"/></div>
-                  <div class="swiper-slide"><img src="images/cartoon/7.jpg" height="832"/></div>
-                  <div class="swiper-slide"><img src="images/cartoon/8.jpg" height="832"/></div>
-                  <div class="swiper-slide"><img src="images/cartoon/9.jpg" height="832"/></div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
+              <img src="images/cartoon/1.jpg" height="512"/>
             </div>
           </div>
         </main>
@@ -295,47 +255,6 @@
         </div>
       </template>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <script>
-      function reloadSwiper() {
-        initSwiper();
-      }
-
-      function initSwiper() {
-        var swiperContainer = document.querySelector('.swiper-container');
-        var existingSwiper = swiperContainer.swiper;
-        if (existingSwiper) {
-          existingSwiper.destroy(true, true);
-        }
-        var swiper = new Swiper('.swiper-container', {
-          loop: true,
-          autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-        });
-      }
-
-      // Initialisation du diaporama lors du chargement initial
-      window.onload = function() {
-        initSwiper();
-      };
-    </script>
-
-    <script>
-      const today = new Date();
-      today.setDate(today.getDate() + 1); // Set minimum date to tomorrow
-      document.getElementById("date").setAttribute("min", today.toISOString().split('T')[0]);
-
-      const maxDate = new Date();
-      maxDate.setDate(maxDate.getDate() + 14); // Set maximum date to 14 days from now
-      document.getElementById("date").setAttribute("max", maxDate.toISOString().split('T')[0]);
-    </script>
 
     <div id="js-global-screen-reader-notice" class="sr-only" aria-live="polite" ></div>
   </body>
