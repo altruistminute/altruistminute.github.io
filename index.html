@@ -306,16 +306,18 @@
       </template>
     </div>
     <script>
-    // Sélectionnez les liens sur lesquels vous souhaitez rafraîchir la page
-    var links = document.querySelectorAll(".sub-nav-mktg-link");
+    // Sélectionnez le lien sur lequel vous souhaitez rafraîchir la page
+    var link = document.querySelector("a[href='https://altruistminute.github.io/cartoonprompt']");
 
-    // Parcourez chaque lien et ajoutez un gestionnaire d'événements click
-    links.forEach(function(link) {
-      link.addEventListener("click", function() {
-        // Rafraîchit la page
-        window.location.reload();
-      });
+    // Ajoutez un gestionnaire d'événements click au lien
+    link.addEventListener("click", function(event) {
+      // Empêche le comportement par défaut du lien (la redirection)
+      event.preventDefault();
+
+      // Rafraîchit la page
+      window.location.reload();
     });
+
     </script>
     <div id="js-global-screen-reader-notice" class="sr-only" aria-live="polite" ></div>
   </body>
