@@ -353,14 +353,10 @@
     var link = document.querySelector("a[href='https://altruistminute.github.io/cartoonprompt']");
 
     // Ajoutez un gestionnaire d'événements click au lien
-    link.addEventListener("click", function(event) {
-      // Empêche le comportement par défaut du lien (la redirection)
-      event.preventDefault();
-
+    link.addEventListener("click", function() {
       // Rafraîchit la page
       window.location.reload();
     });
-
     </script>
 
 
