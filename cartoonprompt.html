@@ -139,7 +139,7 @@
       }
     </style>
   </head>
-  <body class="logged-out env-production page-responsive header-overlay" style="word-wrap: break-word;">
+  <body class="logged-out env-production page-responsive header-overlay" style="word-wrap: break-word;" onLoad=" LoadOnce()">
     <div data-turbo-body class="logged-out env-production page-responsive header-overlay" style="word-wrap: break-word;">
       <div class="position-relative js-header-wrapper ">
         <a href="#start-of-content" class="px-2 py-4 color-bg-accent-emphasis color-fg-on-emphasis show-on-focus js-skip-to-content">Skip to content</a>
@@ -339,18 +339,13 @@
       document.getElementById("date").setAttribute("max", maxDate.toISOString().split('T')[0]);
     </script>
 
-    <script type="text/javascript">
-    $(document).ready(function(){
-        //Check if the current URL contains '#'
-        if(document.URL.indexOf("#")==-1){
-            // Set the URL to whatever it was plus "#".
-            url = document.URL+"#";
-            location = "#";
-
-            //Reload the page
-            location.reload(true);
-        }
-    });
+    <script language=" JavaScript" >
+    <!--
+    function LoadOnce()
+    {
+    window.location.reload();
+    }
+    //-->
     </script>
 
 
