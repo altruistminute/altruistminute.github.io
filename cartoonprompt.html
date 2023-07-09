@@ -349,14 +349,23 @@
     </script>
 
     <script>
-    // Vérifier si le cookie ou l'élément de stockage local existe
-    if (!localStorage.getItem('pageRefreshed')) {
-      // Rafraîchir la page une seule fois
-      location.reload();
+    // Sélectionnez les liens sur lesquels vous souhaitez rafraîchir la page
+    var links = document.querySelectorAll(".sub-nav-mktg-link");
 
-      // Définir le cookie ou l'élément de stockage local pour indiquer que la page a été rafraîchie
-      localStorage.setItem('pageRefreshed', 'true');
-    }
+    // Parcourez chaque lien et ajoutez un gestionnaire d'événements click
+    links.forEach(function(link) {
+      link.addEventListener("click", function() {
+        // Vérifie si le cookie de rafraîchissement existe
+        if (document.cookie.indexOf("refreshed=true") === -1) {
+          // Le cookie n'existe pas, rafraîchit la page
+          location.reload();
+
+          // Définit le cookie de rafraîchissement pour indiquer que la page a été rafraîchie
+          document.cookie = "refreshed=true";
+        }
+      });
+    });
+
     </script>
 
 
