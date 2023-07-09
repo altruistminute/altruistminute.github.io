@@ -256,6 +256,14 @@
       </template>
     </div>
     <script>
+    window.onload = function() {
+        if(!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
+    }
+    </script>
+    <script>
       const today = new Date();
       today.setDate(today.getDate() + 1); // Set minimum date to tomorrow
       document.getElementById("date").setAttribute("min", today.toISOString().split('T')[0]);
