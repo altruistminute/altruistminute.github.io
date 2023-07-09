@@ -298,7 +298,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-      function initSwiper() {
+      window.onload = function() {
+        // Réinitialisation du diaporama
         var swiperContainer = document.querySelector('.swiper-container');
         var existingSwiper = swiperContainer.swiper;
         if (existingSwiper) {
@@ -315,21 +316,8 @@
             clickable: true,
           },
         });
-      }
-
-      // Initialisation du diaporama lors du chargement initial
-      window.onload = function() {
-        initSwiper();
       };
-
-      // Réinitialisation du diaporama lorsque la page est revisitée
-      window.addEventListener('pageshow', function(event) {
-        if (event.persisted) {
-          initSwiper();
-        }
-      });
     </script>
-
 
     <script>
       const today = new Date();
