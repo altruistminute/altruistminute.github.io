@@ -308,7 +308,8 @@
 
       // Vérifie si le paramètre de rafraîchissement est défini dans l'URL
       var refreshParam = getParameterByName('refresh');
-      if (refreshParam === 'true') {
+      if (refreshParam === 'true' && !sessionStorage.getItem('refreshed')) {
+        sessionStorage.setItem('refreshed', 'true');
         setTimeout(function() {
           location.reload();
         }, 2000);
