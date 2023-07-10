@@ -295,18 +295,24 @@
     </script>
 
     <script>
-      window.addEventListener('pageshow', function(event) {
-        var historyTraversal = event.persisted ||
-          (typeof window.performance !== 'undefined' && window.performance.navigation.type === 2);
+      // Fonction pour extraire les paramètres d'URL
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
 
-        if (historyTraversal || !localStorage.getItem("refreshed")) {
-          setTimeout(function() {
-            location.reload();
-          }, 2000);
-
-          localStorage.setItem("refreshed", true);
-        }
-      });
+      // Vérifie si le paramètre de rafraîchissement est défini dans l'URL
+      var refreshParam = getParameterByName('refresh');
+      if (refreshParam === 'true') {
+        setTimeout(function() {
+          location.reload();
+        }, 2000);
+      }
     </script>
 
     <div id="js-global-screen-reader-notice" class="sr-only" aria-live="polite" ></div>
