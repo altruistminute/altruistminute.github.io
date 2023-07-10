@@ -123,7 +123,6 @@
         width: 100%; /* Ajuste la largeur pour remplir la zone du diaporama */
         height: 100%; /* Ajuste la hauteur pour remplir la zone du diaporama */
         object-fit: cover; /* Ajuste la taille de l'image en conservant les proportions et en remplissant le conteneur */
-        display: none; /* Cache toutes les images par défaut */
       }
     </style>
   </head>
@@ -216,15 +215,15 @@
                 </div>
               </div>
               <div class="slideshow">
-                <img src="images/cartoon/1.jpg"  />
-                <img src="images/cartoon/2.jpg"  />
-                <img src="images/cartoon/3.jpg"  />
-                <img src="images/cartoon/4.jpg"  />
-                <img src="images/cartoon/5.jpg"  />
-                <img src="images/cartoon/6.jpg"  />
-                <img src="images/cartoon/7.jpg"  />
-                <img src="images/cartoon/8.jpg"  />
-                <img src="images/cartoon/9.jpg"  />
+                <img src="images/cartoon/1.jpg" alt="Image 1" style="display: block;" />
+                <img src="images/cartoon/2.jpg" alt="Image 2" style="display: none;" />
+                <img src="images/cartoon/3.jpg" alt="Image 3" style="display: none;" />
+                <img src="images/cartoon/4.jpg" alt="Image 1" style="display: block;" />
+                <img src="images/cartoon/5.jpg" alt="Image 2" style="display: none;" />
+                <img src="images/cartoon/6.jpg" alt="Image 3" style="display: none;" />
+                <img src="images/cartoon/7.jpg" alt="Image 1" style="display: block;" />
+                <img src="images/cartoon/8.jpg" alt="Image 2" style="display: none;" />
+                <img src="images/cartoon/9.jpg" alt="Image 3" style="display: none;" />
               </div>
             </div>
           </div>
@@ -281,16 +280,18 @@
       </template>
     </div>
     <script>
-      var images = document.querySelectorAll('.slideshow img');
-      var index = 0;
+      window.addEventListener('load', function() {
+        var images = document.querySelectorAll('.slideshow img');
+        var index = 0;
 
-      function changeImage() {
-        images[index].style.display = 'none'; // Cache l'image actuelle
-        index = (index + 1) % images.length; // Passe à l'image suivante
-        images[index].style.display = 'block'; // Affiche la nouvelle image
-      }
+        function changeImage() {
+          images[index].style.display = 'none'; // Cache l'image actuelle
+          index = (index + 1) % images.length; // Passe à l'image suivante
+          images[index].style.display = 'block'; // Affiche la nouvelle image
+        }
 
-      setInterval(changeImage, 3000); // Change l'image toutes les 3 secondes
+        setInterval(changeImage, 3000); // Change l'image toutes les 3 secondes
+      });
     </script>
 
     <div id="js-global-screen-reader-notice" class="sr-only" aria-live="polite" ></div>
