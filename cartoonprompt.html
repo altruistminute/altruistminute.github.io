@@ -111,6 +111,21 @@
     <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
     <meta name="theme-color" content="#1e2327">
     <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+    <style>
+      .slideshow {
+        max-width: 600px; /* Définit une largeur maximale */
+        height: 512px; /* Définit une hauteur fixe */
+        margin: 0 auto; /* Centre le diaporama horizontalement */
+        overflow: hidden; /* Masque les images qui dépassent de la zone du diaporama */
+      }
+
+      .slideshow img {
+        width: 100%; /* Ajuste la largeur pour remplir la zone du diaporama */
+        height: 100%; /* Ajuste la hauteur pour remplir la zone du diaporama */
+        object-fit: cover; /* Ajuste la taille de l'image en conservant les proportions et en remplissant le conteneur */
+        display: none; /* Cache toutes les images par défaut */
+      }
+    </style>
   </head>
   <body class="logged-out env-production page-responsive header-overlay" style="word-wrap: break-word;">
     <div data-turbo-body class="logged-out env-production page-responsive header-overlay" style="word-wrap: break-word;">
@@ -200,7 +215,17 @@
                   </form>
                 </div>
               </div>
-              <img src="images/cartoon/1.jpg" height="512"/>
+              <div class="slideshow">
+                <img src="images/cartoon/1.jpg"  />
+                <img src="images/cartoon/2.jpg"  />
+                <img src="images/cartoon/3.jpg"  />
+                <img src="images/cartoon/4.jpg"  />
+                <img src="images/cartoon/5.jpg"  />
+                <img src="images/cartoon/6.jpg"  />
+                <img src="images/cartoon/7.jpg"  />
+                <img src="images/cartoon/8.jpg"  />
+                <img src="images/cartoon/9.jpg"  />
+              </div>
             </div>
           </div>
         </main>
@@ -255,6 +280,18 @@
         </div>
       </template>
     </div>
+    <script>
+      var images = document.querySelectorAll('.slideshow img');
+      var index = 0;
+
+      function changeImage() {
+        images[index].style.display = 'none'; // Cache l'image actuelle
+        index = (index + 1) % images.length; // Passe à l'image suivante
+        images[index].style.display = 'block'; // Affiche la nouvelle image
+      }
+
+      setInterval(changeImage, 3000); // Change l'image toutes les 3 secondes
+    </script>
 
     <div id="js-global-screen-reader-notice" class="sr-only" aria-live="polite" ></div>
   </body>
