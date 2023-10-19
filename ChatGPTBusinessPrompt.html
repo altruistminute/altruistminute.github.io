@@ -15,6 +15,9 @@
 <link rel="icon" href="../favicon.ico" type="image/x-icon" />
 <link rel="canonical" href="https://altruistminute.com/ChatGPTBusinessPrompt">
 <style>
+#countdown {
+  font-size: 18px;
+}
 a:link, a:visited, a:hover, a:active {
     color: #1a0dab;
 }
@@ -475,6 +478,8 @@ function submitForm() {
 	</ol>
 	</div>
 	<div id="examplePages">
+    <div id="countdown"><b>Promotion de lancement : -30% avec le code ALT30  [ <span style="color:red" id="timer"></span>]</b></div>
+    <p><br></p>
   </div>
 	<div class="sign-up">
     <form action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
@@ -498,6 +503,35 @@ window.onload = function() {
 	var hfge = com.goalkicker.headerFooterGlassEffect;
 	hfge.positionAll();
 }
+</script>
+
+<script>
+  // Date et heure de fin du compte à rebours
+  var countDownDate = new Date("2023-12-31 23:59:59").getTime();
+
+  // Mettre à jour le compte à rebours toutes les 1 seconde
+  var x = setInterval(function() {
+    // Obtenez la date et l'heure actuelles
+    var now = new Date().getTime();
+
+    // Calculez la différence entre la date de fin et la date actuelle
+    var distance = countDownDate - now;
+
+    // Calcul des jours, heures, minutes et secondes restantes
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Affichage du compte à rebours dans l'élément HTML
+    document.getElementById("timer").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+
+    // Si le compte à rebours est terminé, affichez un message
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("timer").innerHTML = "EXPIRÉ";
+    }
+  }, 1000);
 </script>
 </body>
 </html>
