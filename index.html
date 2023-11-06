@@ -162,25 +162,70 @@ button:hover {
 	<div>
 	<div class="latest-news">
 		<h2>A Propos</h2>
-		<p>L'intelligence artificielle, la tech et le business en ligne sont nos domaines d'expertise.</p>
-		<p>Notre but ? Vous aider à faire travailler l'IA à votre place comme elle le fait déjà pour nous.</p>
-		<p>Nous partageons ici les outils que nous avons developpés et que nous utilisons au quotidien, nos methodes, nos astuces et secrets.</p>
-		<p>Profitez-en maintenant et devenez un super-humain.</p>
+	  <p>L'intelligence artificielle, la tech et le business en ligne sont los domaines d'expertise de AltruistMinute. Notre but ? Vous aider à faire travailler l'IA à votre place comme elle le fait déjà pour nous. Nous partageons ici les outils que nous avons développés et que nous utilisons au quotidien, nos méthodes, nos astuces et secrets. Profitez-en maintenant et devenez un super-humain.</p>
 		<p><br></p>
 		<h2>Articles</h2>
 		<p>&#8667; <a href="https://altruistminute.com/20StableDiffusionStyles">20 Styles Stable Diffusion</a> (07 Aug 2023)</p>
 		<p>&#8667; <a href="https://altruistminute.com/IATransactionIllegale">Des Transactions Illégales et des Mensonges Inquiétants par un bot IA</a> (04 Nov 2023)</p>
 		<p>&#8667; <a href="https://altruistminute.com/ChatbotXAI">xAI, la Startup d'Elon Musk, Dévoile Son Chatbot Grok</a> (05 Nov 2023)</p>
 		<p><br></p>
-		<h2>Contact</h2>
-		<p>Envoyez-nous un mail <a href="mailto: altruistminute@gmail.com">ici</a>.</p>
-		<p><br></p>
-		<h2>Politique</h2>
-		<p>La satisfaction et la confidentialité de nos clients sont nos priorités. Contactez-nous dès le moindre problème.</p>
-		<p><br></p>
-		<h2>Mentions</h2>
-		<p>Copyright © AltruistMinute 2023 - Tous droits réservés</p>
-		<p><br></p>
+    <style>
+      #legal {
+          text-decoration: underline;
+          cursor: pointer;
+          color: #007bff; /* Changement de couleur pour indiquer qu'il est cliquable */
+      }
+
+      .legal-content {
+          display: none;
+          background-color: #f9f9f9;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-top: 10px;
+      }
+
+      .legal-content h2 {
+          font-size: 18px;
+          color: #333;
+          margin-top: 15px;
+      }
+
+      .legal-content p {
+          font-size: 16px;
+          color: #666;
+      }
+  </style>
+
+  <h2 id="legal" onclick="toggleLegalContent()">Légal et Garantie</h2>
+  <div class="legal-content">
+      <h2>Satisfaction Garantie</h2>
+      <p>Chez AltruistMinute, nous nous engageons à offrir une expérience exceptionnelle à nos clients. Nous croyons en la qualité de nos produits et services liés à l'Intelligence Artificielle (IA), et nous sommes fiers de les mettre à votre disposition. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de votre achat, nous ferons tout en notre pouvoir pour résoudre vos préoccupations. Nous offrons une garantie de satisfaction client à 100 %.</p>
+
+      <h2>Garantie Légale</h2>
+      <p>AltruistMinute respecte toutes les lois et réglementations applicables en matière de commerce électronique et de protection du consommateur. Nos produits et services sont conformes aux normes légales en vigueur, et nous travaillons constamment à maintenir notre entreprise en pleine conformité avec les réglementations.</p>
+
+      <h2>Confidentialité et Sécurité des Données</h2>
+      <p>Nous comprenons l'importance de la confidentialité de vos données. AltruistMinute s'engage à protéger vos informations personnelles et à les utiliser uniquement dans le but de vous fournir les produits et services que vous avez achetés.</p>
+
+      <h2>Assistance Client</h2>
+      <p>Notre équipe d'assistance est à votre disposition pour répondre à toutes vos questions et vous aider en cas de besoin. Si vous avez des préoccupations concernant votre achat, des questions sur nos produits ou des demandes spécifiques, n'hésitez pas à nous <a href="mailto:altruistminute@gmail.com">contacter</a>. Nous sommes là pour vous aider.</p>
+
+      <h2>Mentions</h2>
+      <p>Copyright © AltruistMinute 2023 - Tous droits réservés</p>
+  </div>
+
+  <script>
+      function toggleLegalContent() {
+          var legalContent = document.querySelector('.legal-content');
+          if (legalContent.style.display === 'none' || legalContent.style.display === '') {
+              legalContent.style.display = 'block';
+          } else {
+              legalContent.style.display = 'none';
+          }
+      }
+  </script>
+	<p><br></p>
 	</div>
 	<form action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
 	<h2>Recevoir nos News</h2>
