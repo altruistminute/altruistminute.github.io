@@ -110,7 +110,8 @@ button:hover {
 	transform: scale(1);
 }
 
-.user-signup input {
+.user-signup input,
+.user-signup textarea {
     width: 250px;
     border: 1px solid #3498db;
     border-radius: 10px;
@@ -184,18 +185,18 @@ button:hover {
 			}
 
       .legal-content h2 {
-          font-size: 18px;
+          font-size: 14px;
           color: #333;
           margin-top: 15px;
       }
 
       .legal-content p {
-          font-size: 16px;
+          font-size: 12px;
           color: #666;
       }
   </style>
 
-  <h2 id="legal" onclick="toggleLegalContent()">Légal et Garantie</h2>
+  <h4 id="legal" onclick="toggleLegalContent()">Légal et Garantie</h4>
   <div class="legal-content">
       <h2>Satisfaction Garantie</h2>
       <p>Chez AltruistMinute, nous nous engageons à offrir une expérience exceptionnelle à nos clients. Nous croyons en la qualité de nos produits et services liés à l'Intelligence Artificielle (IA), et nous sommes fiers de les mettre à votre disposition. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de votre achat, nous ferons tout en notre pouvoir pour résoudre vos préoccupations. Nous offrons une garantie de satisfaction client à 100 %.</p>
@@ -233,14 +234,15 @@ button:hover {
 	<p><br></p>
 	</div>
 	<form action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
-	<h2>Recevoir nos News</h2>
+	<h2>Service Client</h2>
 	<table style="margin:auto;" class="user-signup">
   	<tr><th>Email:</th><td><input type="email" id="email" name="email" required/></td></tr>
+		<tr><th>Motif:</th><td><textarea id="message" name="message" style="height: 100px;" required></textarea></td></tr>
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://t.me/+YzfFKS9lerVmZjQ8">
     <input type="hidden" name="_subject" value="New Comer Altruist">
-		<tr><td colspan="2"><button class="signup" type="submit">S'abonner</button></td></tr>
+		<tr><td colspan="2"><button class="signup" type="submit">Envoyer</button></td></tr>
 	</table>
 	</form>
 	</div>
