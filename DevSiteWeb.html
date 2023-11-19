@@ -529,13 +529,13 @@ function submitForm() {
       }
 
       .legal-content h2 {
-          font-size: 18px;
+          font-size: 14px;
           color: #333;
           margin-top: 15px;
       }
 
       .legal-content p {
-          font-size: 16px;
+          font-size: 12px;
           color: #666;
       }
   </style>
@@ -577,6 +577,7 @@ function submitForm() {
   	<h2>Souscrire à notre newsletter</h2>
   	<table style="margin:auto;" class="user-signup">
   		<tr><th>Email:</th><td><input type="email" id="email" name="email" required/></td></tr>
+      <tr><th>Motif:</th><td><textarea id="message" name="message" style="height: 100px;" required></textarea></td></tr>
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://altruistminute.com/DevSiteWeb">
