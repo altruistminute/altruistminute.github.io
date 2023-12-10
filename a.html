@@ -3,70 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Invitation à rejoindre la communauté</title>
+  <title>Communauté d'IA et Business en Ligne</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-      background-color: #111;
-      color: #eee;
-    }
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+  /*** VARIABLES ***/
+  /* Colors */
+  $black: #1d1f20;
+  $blue: #83e4e2;
+  $green: #a2ed56;
+  $yellow: #fddc32;
+  $white: #fafafa;
 
-    h1 {
-      color: #00BFFF;
-    }
 
-    .invitation {
-      margin-bottom: 20px;
-      background-color: #1a1a1a;
-      border-radius: 8px;
-      padding: 20px;
-      border: 2px solid #00BFFF;
-    }
 
-    ol {
-      color: #eee;
-    }
+  /*** EXTEND ***/
+  /* box-shadow */
+  %boxshadow {
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
+  }
 
-    li {
-      margin-bottom: 10px;
+
+
+  /*** STYLE ***/
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: $white;
+    color: $black;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  main {
+    display: block;
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 1rem;
+  }
+
+
+  ol.gradient-list {
+    counter-reset: gradient-counter;
+    list-style: none;
+    margin: 1.75rem 0;
+    padding-left: 1rem;
+    > li {
+      background: white;
+      border-radius: 0 0.5rem 0.5rem 0.5rem;
+      @extend %boxshadow;
+      counter-increment: gradient-counter;
+      margin-top: 1rem;
+      min-height: 3rem;
+      padding: 1rem 1rem 1rem 3rem;
+      position: relative;
+      &::before,
+      &::after {
+        background: linear-gradient(135deg, $blue 0%,$green 100%);
+        border-radius: 1rem 1rem 0 1rem;
+        content: '';
+        height: 3rem;
+        left: -1rem;
+        overflow: hidden;
+        position: absolute;
+        top: -1rem;
+        width: 3rem;
+      }
+      &::before {
+        align-items: flex-end;
+        @extend %boxshadow;
+        content: counter(gradient-counter);
+        color: $black;
+        display: flex;
+        font: 900 1.5em/1 'Montserrat';
+        justify-content: flex-end;
+        padding: 0.125em 0.25em;
+        z-index: 1;
+      }
+      @for $i from 1 through 5 {
+        &:nth-child(10n+#{$i}):before {
+          background: linear-gradient(135deg, rgba($green, $i * 0.2) 0%,rgba($yellow, $i * 0.2) 100%);
+        }
+      }
+      @for $i from 6 through 10 {
+        &:nth-child(10n+#{$i}):before {
+          background: linear-gradient(135deg, rgba($green, 1 - (($i - 5) * 0.2)) 0%,rgba($yellow, 1 - (($i - 5) * 0.2)) 100%);
+        }
+      }
+      + li {
+        margin-top: 2rem;
+      }
     }
+  }
   </style>
 </head>
 <body>
 
-  <h1>Invitation à rejoindre la communauté</h1>
-
-  <div class="invitation">
-    <p>Bienvenue dans notre communauté exclusive dédiée à l'intelligence artificielle et au business en ligne, où l'excellence et la réussite sont à portée de main. En tant que créateur de ce groupe et expert passionné en intelligence artificielle et en business en ligne, je suis ravi de t'inviter à rejoindre une expérience unique et enrichissante.</p>
-
-    <p>En tant que membre privilégié, tu auras accès à une multitude d'avantages conçus pour propulser ta compréhension de l'intelligence artificielle et maximiser tes opportunités dans le monde du business en ligne.</p>
-
-    <p>Voici comment notre communauté peut transformer ton parcours professionnel :</p>
-
-    <ol>
-      <li><strong>Ressources de Qualité à ta Portée :</strong> Bénéficie d'un accès exclusif à des ressources de qualité, comprenant des formations approfondies, des guides pratiques et des documents conçus pour t'aider à exceller dans l'intelligence artificielle et le business en ligne.</li>
-
-      <li><strong>Guidance Personnalisée Directement de Moi à Toi :</strong> Profite d'une guidance personnalisée directement de ma part. Je suis là pour répondre à tes questions spécifiques, t'orienter dans tes projets et te fournir les conseils nécessaires pour accélérer ton parcours vers le succès.</li>
-
-      <li><strong>Échange d'Idées et Opportunités de Collaboration :</strong> Rejoins une communauté collaborative où tu pourras partager tes idées, former des partenariats avec d'autres entrepreneurs passionnés et explorer des opportunités de collaboration mutuellement bénéfiques.</li>
-
-      <li><strong>Actualités en Temps Réel et Tendances du Secteur :</strong> Reste constamment à la pointe des dernières actualités, avancées et tendances en temps réel dans le domaine de l'intelligence artificielle et du business en ligne.</li>
-
-      <li><strong>Réseautage avec des Pairs et des Experts de l'Industrie :</strong> Élargis ton réseau en interagissant avec d'autres membres partageant les mêmes aspirations. Ces connexions peuvent être la clé de nouvelles opportunités professionnelles et collaborations fructueuses.</li>
-
-      <li><strong>Réductions Exclusives et Offres Spéciales :</strong> Bénéficie de réductions exclusives sur des outils, des formations et d'autres ressources essentielles pour ton développement professionnel dans ces domaines en constante évolution.</li>
-
-      <li><strong>Soutien et Motivation Continue :</strong> Reçois un soutien continu de la part de la communauté pour résoudre des défis, célébrer des réussites et rester motivé tout au long de ton parcours.</li>
-
-      <li><strong>Sessions de Questions-Réponses en Direct et Webinaires Privés :</strong> Participe à des sessions de questions-réponses en direct et à des webinaires exclusifs où tu pourras interagir directement avec moi, poser des questions spécifiques et approfondir ta compréhension.</li>
+  <main>
+    <ol class="gradient-list">
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+      <li>Aenean tincidunt elit at ipsum cursus, vitae interdum nulla suscipit.</li>
+      <li>Curabitur in orci vel risus facilisis accumsan.</li>
+      <li>Morbi eleifend tortor lacinia sapien sagittis, quis pellentesque felis egestas.</li>
+      <li>Aenean viverra dui quis leo lacinia fringilla.</li>
+      <li>Sed varius lectus ac condimentum egestas.</li>
+      <li>Maecenas faucibus lorem nec lorem posuere, a rhoncus velit porttitor.</li>
+      <li>Proin porta arcu ac elit malesuada pulvinar.</li>
+      <li>Phasellus vitae felis sit amet mi gravida volutpat.</li>
+      <li>Curabitur vulputate urna non efficitur interdum.</li>
+      <li>Curabitur dapibus enim in consectetur imperdiet.</li>
+      <li>Suspendisse consectetur nibh non condimentum porta.</li>
+      <li>Ut placerat diam in cursus aliquet.</li>
+      <li>Praesent vitae quam id tortor malesuada viverra ut at elit.</li>
+      <li>Vivamus feugiat justo id volutpat rutrum.</li>
+      <li>Nulla volutpat erat non mauris condimentum, nec consequat elit posuere.</li>
+      <li>Vestibulum eu risus efficitur, porta lacus a, mollis metus.</li>
+      <li>Maecenas finibus arcu vel urna commodo, ac bibendum massa vestibulum.</li>
+      <li>Praesent eleifend leo eget consectetur interdum.</li>
+      <li>Suspendisse et lectus gravida, interdum mauris aliquet, mattis purus.</li>
+      <li>In nec nisl feugiat, blandit odio non, vulputate neque.</li>
+      <li>Sed id felis mollis, bibendum orci a, condimentum augue.</li>
+      <li>Etiam eleifend ipsum nec nibh aliquam, non commodo risus eleifend.</li>
+      <li>Curabitur in ipsum eget lacus blandit maximus in at sem.</li>
+      <li>Curabitur sagittis ante nec libero maximus, ut imperdiet elit egestas.</li>
+      <li>Proin congue felis sed ultrices elementum.</li>
+      <li>Duis sit amet velit et lectus eleifend interdum non quis ex.</li>
+      <li>Praesent congue lectus a felis pharetra malesuada.</li>
+      <li>Sed vel mauris condimentum, egestas dolor eu, porttitor nisl.</li>
+      <li>Donec sed elit tincidunt, accumsan magna sed, facilisis libero.</li>
+      <li>Curabitur vel purus quis justo placerat euismod mollis ac arcu.</li>
+      <li>Sed eget mi et justo luctus mollis ut non augue.</li>
+      <li>Suspendisse sit amet lectus et magna euismod tempor.</li>
+      <li>Vestibulum accumsan velit et ipsum pellentesque, vitae ultricies erat blandit.</li>
+      <li>Pellentesque vel dolor ac risus efficitur convallis.</li>
+      <li>Maecenas feugiat quam at facilisis dapibus.</li>
+      <li>Cras commodo leo sit amet lacus lacinia, eget rutrum sem sodales.</li>
+      <li>Ut sit amet risus finibus, iaculis lectus sit amet, varius lectus.</li>
+      <li>Duis dignissim elit eget erat maximus luctus.</li>
     </ol>
-
-    <p>Ne laisse pas passer cette opportunité de faire partie d'une communauté exceptionnelle dédiée à l'excellence en intelligence artificielle et dans le business en ligne. Clique dès maintenant sur "Rejoindre" et commençons ensemble ce voyage passionnant vers le succès.</p>
-
-    <p>Bienvenue dans notre communauté, où l'excellence t'attend !</p>
-  </div>
-
+  </main>
 </body>
 </html>
