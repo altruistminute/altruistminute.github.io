@@ -1,154 +1,92 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Communauté d'IA et Business en Ligne</title>
-  <style>
-  @import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
-  /*** VARIABLES ***/
-  /* Colors */
-  $black: #1d1f20;
-  $blue: #83e4e2;
-  $green: #a2ed56;
-  $yellow: #fddc32;
-  $white: #fafafa;
-
-
-
-  /*** EXTEND ***/
-  /* box-shadow */
-  %boxshadow {
-    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
-  }
-
-
-
-  /*** STYLE ***/
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
-
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    background-color: $white;
-    color: $black;
-    font-family: 'Raleway', sans-serif;
-  }
-
-  main {
-    display: block;
-    margin: 0 auto;
-    max-width: 40rem;
-    padding: 1rem;
-  }
-
-
-  ol.gradient-list {
-    counter-reset: gradient-counter;
-    list-style: none;
-    margin: 1.75rem 0;
-    padding-left: 1rem;
-    > li {
-      background: white;
-      border-radius: 0 0.5rem 0.5rem 0.5rem;
-      @extend %boxshadow;
-      counter-increment: gradient-counter;
-      margin-top: 1rem;
-      min-height: 3rem;
-      padding: 1rem 1rem 1rem 3rem;
-      position: relative;
-      &::before,
-      &::after {
-        background: linear-gradient(135deg, $blue 0%,$green 100%);
-        border-radius: 1rem 1rem 0 1rem;
-        content: '';
-        height: 3rem;
-        left: -1rem;
-        overflow: hidden;
-        position: absolute;
-        top: -1rem;
-        width: 3rem;
-      }
-      &::before {
-        align-items: flex-end;
-        @extend %boxshadow;
-        content: counter(gradient-counter);
-        color: $black;
-        display: flex;
-        font: 900 1.5em/1 'Montserrat';
-        justify-content: flex-end;
-        padding: 0.125em 0.25em;
-        z-index: 1;
-      }
-      @for $i from 1 through 5 {
-        &:nth-child(10n+#{$i}):before {
-          background: linear-gradient(135deg, rgba($green, $i * 0.2) 0%,rgba($yellow, $i * 0.2) 100%);
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communauté Exclusive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
         }
-      }
-      @for $i from 6 through 10 {
-        &:nth-child(10n+#{$i}):before {
-          background: linear-gradient(135deg, rgba($green, 1 - (($i - 5) * 0.2)) 0%,rgba($yellow, 1 - (($i - 5) * 0.2)) 100%);
+
+        h1 {
+            color: #333;
         }
-      }
-      + li {
-        margin-top: 2rem;
-      }
-    }
-  }
-  </style>
+
+        p {
+            color: #666;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: #ff6347;
+        }
+    </style>
 </head>
 <body>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <div class="content-container">
+    <div class="list-container">
+      <ul>
+        <li>
+          <strong>Frodo -</strong> A young well-to-do hobbit. When he discovers that the magic ring left to him by his eccentric "Uncle" Bilbo is the One Ring, he reluctantly takes on the quest to destroy it. Often referred to as the Ringbearer.
+        </li>
+        <li>
+          <strong>Gandalf the Grey -</strong> A wizard best known among hobbits for his fireworks and mischievous sense of humor, but actually one of the greatest powers of Middle-earth. He reveals the truth about the Ring to Frodo and acts as a guide and counselor. The leader of the Fellowship. Other names: Stormcrow, Mithrandir, the Grey Pilgrim, the White Rider, Tharkûn, Olórin, Incánus, and Gandalf the White.
+        </li>
+        <li>
+          <strong>Aragorn -</strong> The heir of Isildur and the rightful king of Gondor, a mighty warrior and healer. He was raised by the elves of Rivendell and now lives in exile as leader of the Dúnedain, the Rangers of the North. The time has now come for him to reclaim the throne. He leads the Fellowship after Gandalf's fall. Other names: Strider, Elessar, Elfstone, Dúnadan.
+        </li>
+      </ul>
+    </div>
+    </div>
 
-  <main>
-    <ol class="gradient-list">
-      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-      <li>Aenean tincidunt elit at ipsum cursus, vitae interdum nulla suscipit.</li>
-      <li>Curabitur in orci vel risus facilisis accumsan.</li>
-      <li>Morbi eleifend tortor lacinia sapien sagittis, quis pellentesque felis egestas.</li>
-      <li>Aenean viverra dui quis leo lacinia fringilla.</li>
-      <li>Sed varius lectus ac condimentum egestas.</li>
-      <li>Maecenas faucibus lorem nec lorem posuere, a rhoncus velit porttitor.</li>
-      <li>Proin porta arcu ac elit malesuada pulvinar.</li>
-      <li>Phasellus vitae felis sit amet mi gravida volutpat.</li>
-      <li>Curabitur vulputate urna non efficitur interdum.</li>
-      <li>Curabitur dapibus enim in consectetur imperdiet.</li>
-      <li>Suspendisse consectetur nibh non condimentum porta.</li>
-      <li>Ut placerat diam in cursus aliquet.</li>
-      <li>Praesent vitae quam id tortor malesuada viverra ut at elit.</li>
-      <li>Vivamus feugiat justo id volutpat rutrum.</li>
-      <li>Nulla volutpat erat non mauris condimentum, nec consequat elit posuere.</li>
-      <li>Vestibulum eu risus efficitur, porta lacus a, mollis metus.</li>
-      <li>Maecenas finibus arcu vel urna commodo, ac bibendum massa vestibulum.</li>
-      <li>Praesent eleifend leo eget consectetur interdum.</li>
-      <li>Suspendisse et lectus gravida, interdum mauris aliquet, mattis purus.</li>
-      <li>In nec nisl feugiat, blandit odio non, vulputate neque.</li>
-      <li>Sed id felis mollis, bibendum orci a, condimentum augue.</li>
-      <li>Etiam eleifend ipsum nec nibh aliquam, non commodo risus eleifend.</li>
-      <li>Curabitur in ipsum eget lacus blandit maximus in at sem.</li>
-      <li>Curabitur sagittis ante nec libero maximus, ut imperdiet elit egestas.</li>
-      <li>Proin congue felis sed ultrices elementum.</li>
-      <li>Duis sit amet velit et lectus eleifend interdum non quis ex.</li>
-      <li>Praesent congue lectus a felis pharetra malesuada.</li>
-      <li>Sed vel mauris condimentum, egestas dolor eu, porttitor nisl.</li>
-      <li>Donec sed elit tincidunt, accumsan magna sed, facilisis libero.</li>
-      <li>Curabitur vel purus quis justo placerat euismod mollis ac arcu.</li>
-      <li>Sed eget mi et justo luctus mollis ut non augue.</li>
-      <li>Suspendisse sit amet lectus et magna euismod tempor.</li>
-      <li>Vestibulum accumsan velit et ipsum pellentesque, vitae ultricies erat blandit.</li>
-      <li>Pellentesque vel dolor ac risus efficitur convallis.</li>
-      <li>Maecenas feugiat quam at facilisis dapibus.</li>
-      <li>Cras commodo leo sit amet lacus lacinia, eget rutrum sem sodales.</li>
-      <li>Ut sit amet risus finibus, iaculis lectus sit amet, varius lectus.</li>
-      <li>Duis dignissim elit eget erat maximus luctus.</li>
-    </ol>
-  </main>
+    <h1>Description</h1>
+    <p>Bienvenue dans notre communauté exclusive dédiée à l'intelligence artificielle et au business en ligne, où l'excellence et la réussite sont à portée de main. En tant que créateur de ce groupe et expert passionné en intelligence artificielle et en business en ligne, je suis ravi de vous inviter à rejoindre une expérience unique et enrichissante.</p>
+
+    <h2>Comment notre communauté peut transformer votre parcours professionnel :</h2>
+    <ul>
+        <li>Ressources de Qualité à votre Portée</li>
+        <li>Accompagnement Personnalisé Directement de Moi à Vous</li>
+        <li>Échange d'Idées et Opportunités de Collaboration</li>
+        <li>Actualités en Temps Réel et Tendances du Secteur</li>
+        <li>Réseautage avec des Pairs et des Experts de l'Industrie</li>
+        <li>Réductions Exclusives et Offres Spéciales</li>
+        <li>Soutien et Motivation Continue</li>
+        <li>Sessions de Questions-Réponses en Direct et Webinaires Privés</li>
+    </ul>
+
+    <p class="highlight">🚨 Attention 🚨<br>
+    Changements Importants à Partir du 1er Janvier !</p>
+    <p>Accès à l'historique de conversation<br>
+    Prix de lancement exceptionnel :</p>
+
+    <p>Processus :</p>
+    <ul>
+        <li>Accès au Groupe</li>
+        <li>Formations de Bienvenue</li>
+        <li>Idées de Business à lancer</li>
+        <li>Formations Hebdomadaires</li>
+        <li>Liberté Totale</li>
+    </ul>
+
+    <p>Le prix de lancement extrêmement bas de 19 euros prendra fin le 31 décembre. C'est votre opportunité finale de bénéficier de ce tarif exclusif. À partir du nouvel an, les nouveaux membres devront s'acquitter du tarif régulier.</p>
+
+    <p>Après votre paiement, vous obtiendrez le lien d'accès. Cliquez sur ce dernier pour accéder au groupe.</p>
+
+    <p>Dans le groupe, vous aurez accès à des guides et formations de bienvenue, des idées de business à lancer avec l'IA, et des formations hebdomadaires sur de nouvelles méthodes pour gagner de l'argent avec l'IA.</p>
+
+    <p>Vous êtes libre d'échanger dans le groupe ou de profiter uniquement des ressources exclusives mises à votre disposition.</p>
+
 </body>
 </html>

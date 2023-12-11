@@ -49,7 +49,7 @@ body, html {
 
 body, button {
 	text-align: center;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Quicksand', sans-serif;
 	background-color: #fafafa;
 }
 
@@ -355,43 +355,25 @@ blockquote {
   padding: 15px;
 }
 
-
-
-* { // make it sexy
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
-  letter-spacing: -0.25px;
+ul {
+  display: table-row;
+  list-style: none;
 }
 
-ol { padding-left: 50px; }
 li {
-  color: #4F4F4F;
-  padding-left: 16px;
-  margin-top: 24px;
-  position: relative;
-  font-size: 16px;
-  line-height: 20px;
-
-  &:before {
-    content: '';
-    display: block;
-    height: 42px;
-    width: 42px;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-    position: absolute; // yeah, you have to manually position it based on the text size, line height, etc. (in the parent li style). it's not the smarest solution
-    top: -12px;
-    left: -46px;
-  }
+  display: table-row;
 }
 
-strong { color: #292929; }
-
-ol.alternating-colors {
-  li:nth-child(odd):before { border-color: #0BAD02; }
-  li:nth-child(even):before { border-color: #2378D5; }
+li::before {
+  display: table-cell;
+  text-align: right;
+  content: "+";
+  font-size: 1em;
+  font-weight: bold;
+  color: #FF404C;
+  padding-right: 12px;
 }
+
 </style>
 <script>
 var com = com || {};
@@ -518,9 +500,8 @@ function submitForm() {
 <div class="sharethis-inline-share-buttons"></div>
 	</div>
 	<div id="contents">
-	<h2>Rejoignez l'Excellence : Devenez un Membre Privilégié d'Elite IA<h2>
+	<h2>Rejoignez l'Excellence ! Et gagnez de l'argent avec l'IA.<h2>
 	<ol class="contents">
-    <ol class="alternating-colors">
     <li>Intelligence Artificielle</li>
     <li>Business en Ligne</li>
     <li>Techniques Avancées</li>
@@ -530,53 +511,44 @@ function submitForm() {
     <li>Réductions Exclusives</li>
     <li>Communauté Collaborative</li>
     <li>White et Black Hat IA</li>
-    </ol>
 	</ol>
 	</div>
 	<div id="examplePages">
   </div>
   <div class="notice">
     <h2>Description</h2>
-    <p>Bienvenue dans notre communauté exclusive dédiée à l'intelligence artificielle et au business en ligne, où l'excellence et la réussite sont à portée de main. En tant que créateur de ce groupe et expert passionné en intelligence artificielle et en business en ligne, je suis ravi de vous inviter à rejoindre une expérience unique et enrichissante.</p>
+    <p>Bienvenue dans notre communauté exclusive dédiée à l'intelligence artificielle et au business en ligne, où l'excellence et la réussite sont à portée de main. En tant que créateur de ce groupe et expert passionné en intelligence artificielle et en business en ligne, je suis ravi de vous inviter à rejoindre une expérience unique et enrichissante.
 
-    <p>En tant que membre privilégié, vous aurez accès à une multitude d'avantages conçus pour propulser votre compréhension de l'intelligence artificielle et maximiser vos opportunités dans le monde du business en ligne.</p>
+    <p>En tant que membre privilégié, vous aurez accès à une multitude d'avantages conçus pour propulser votre compréhension de l'intelligence artificielle et maximiser vos opportunités dans le monde du business en ligne.
 
-    <p>Voici comment notre communauté peut transformer votre parcours professionnel :</p>
+    <p>Voici comment notre communauté peut transformer votre parcours professionnel :
 
-    <ol class="alternating-colors">
-      <li><strong>Ressources de Qualité à votre Portée</strong> <p>Bénéficiez d'un accès exclusif à des ressources de qualité, comprenant des formations approfondies, des guides pratiques et des documents conçus pour vous aider à exceller dans l'intelligence artificielle et le business en ligne.</p></li>
+    <li><strong>Ressources de Qualité à votre Portée :</strong> Bénéficiez d'un accès exclusif à des ressources de qualité, comprenant des formations approfondies, des guides pratiques et des documents conçus pour vous aider à exceller dans l'intelligence artificielle et le business en ligne.</li>
 
-      <li><strong>Accompagnement Personnalisé Directement de Moi à Vous</strong> <p>Profitez d'un accompagnement personnalisé directement de ma part. Je suis là pour répondre à vos questions spécifiques, vous orienter dans vos projets et vous fournir les conseils nécessaires pour accélérer votre parcours vers le succès.</p></li>
+    <li><strong>Accompagnement Personnalisé Directement de Moi à Vous :</strong> Profitez d'un accompagnement personnalisé directement de ma part. Je suis là pour répondre à vos questions spécifiques, vous orienter dans vos projets et vous fournir les conseils nécessaires pour accélérer votre parcours vers le succès.</li>
 
-      <li><strong>Échange d'Idées et Opportunités de Collaboration :</strong> <p>Rejoignez une communauté collaborative où vous pourrez partager vos idées, former des partenariats avec d'autres entrepreneurs passionnés et explorer des opportunités de collaboration mutuellement bénéfiques.</p></li>
+    <li><strong>Échange d'Idées et Opportunités de Collaboration :</strong> Rejoignez une communauté collaborative où vous pourrez partager vos idées, former des partenariats avec d'autres entrepreneurs passionnés et explorer des opportunités de collaboration mutuellement bénéfiques.</li>
 
-      <li><strong>Actualités en Temps Réel et Tendances du Secteur :</strong> <p>Restez constamment à la pointe des dernières actualités, avancées et tendances en temps réel dans le domaine de l'intelligence artificielle et du business en ligne.</p></li>
+    <li><strong>Actualités en Temps Réel et Tendances du Secteur :</strong> Restez constamment à la pointe des dernières actualités, avancées et tendances en temps réel dans le domaine de l'intelligence artificielle et du business en ligne.</li>
 
-      <li><strong>Réseautage avec des Pairs et des Experts de l'Industrie :</strong> <p>Élargissez votre réseau en interagissant avec d'autres membres partageant les mêmes aspirations. Ces connexions peuvent être la clé de nouvelles opportunités professionnelles et collaborations fructueuses.</p></li>
+    <li><strong>Réseautage avec des Pairs et des Experts de l'Industrie :</strong> Élargissez votre réseau en interagissant avec d'autres membres partageant les mêmes aspirations. Ces connexions peuvent être la clé de nouvelles opportunités professionnelles et collaborations fructueuses.</li>
 
-      <li><strong>Réductions Exclusives et Offres Spéciales :</strong> <p>Bénéficiez de réductions exclusives sur des outils, des formations et d'autres ressources essentielles pour votre développement professionnel dans ces domaines en constante évolution.</p></li>
+    <li><strong>Réductions Exclusives et Offres Spéciales :</strong> Bénéficiez de réductions exclusives sur des outils, des formations et d'autres ressources essentielles pour votre développement professionnel dans ces domaines en constante évolution.</li>
 
-      <li><strong>Soutien et Motivation Continue :</strong> <p>Recevez un soutien continu de la part de la communauté pour résoudre des défis, célébrer des réussites et rester motivé tout au long de votre parcours.</li>
+    <li><strong>Soutien et Motivation Continue :</strong> Recevez un soutien continu de la part de la communauté pour résoudre des défis, célébrer des réussites et rester motivé tout au long de votre parcours.</li>
 
-      <li><strong>Sessions de Questions-Réponses en Direct et Webinaires Privés :</strong> <p>Participez à des sessions de questions-réponses en direct et à des webinaires exclusifs où vous pourrez interagir directement avec moi, poser des questions spécifiques et approfondir votre compréhension.</p></li>
-    </ol>
-
-    <h2>🚨 Attention 🚨</h2>
-    <p><strong>Changements Importants à Partir du 1er Janvier !</strong></p>
-    <ol class="alternating-colors">
-    <li><strong>Accès à l'historique de conversation</strong> <p>À partir du 1er janvier, les nouveaux membres rejoignant notre groupe Telegram n'auront malheureusement plus accès à l'historique de conversation antérieur à leur arrivée. C'est votre dernière chance de profiter de l'ensemble des échanges captivants qui ont eu lieu jusqu'à présent !</p></li>
-    <li><strong>Prix de lancement exceptionnel :</strong> <p>Le prix de lancement extrêmement bas de 19 euros prendra fin le 31 décembre. C'est votre opportunité finale de bénéficier de ce tarif exclusif. À partir du nouvel an, les nouveaux membres devront s'acquitter du tarif régulier.</p></li>
-    </ol>
+    <li><strong>Sessions de Questions-Réponses en Direct et Webinaires Privés :</strong> Participez à des sessions de questions-réponses en direct et à des webinaires exclusifs où vous pourrez interagir directement avec moi, poser des questions spécifiques et approfondir votre compréhension.</li>
+    <p></p>
+    <h2>Attention 🚨</h2>
+    <li><strong>Accès à l'historique de conversation :</strong> À partir du 1er janvier, les nouveaux membres rejoignant notre groupe Telegram n'auront malheureusement plus accès à l'historique de conversation antérieur à leur arrivée. C'est votre dernière chance de profiter de l'ensemble des échanges captivants qui ont eu lieu jusqu'à présent !</li>
+    <li><strong>Prix de lancement exceptionnel :</strong> Le prix de lancement extrêmement bas de 19 euros prendra fin le 31 décembre. C'est votre opportunité finale de bénéficier de ce tarif exclusif. À partir du nouvel an, les nouveaux membres devront s'acquitter du tarif régulier.</li>
     <p></p>
     <h2>Processus</h2>
-    <ol class="alternating-colors">
-    <li><strong>Accès au Groupe</strong> <p>Après votre paiement, vous obtiendrez le lien d'accès. Cliquez sur ce dernier pour acceder au groupe.</p></li>
-    <li><strong>Formations de Bienvenue</strong> <p>Dans le groupe, vous aurez accès à des guides et formations de bienvenue : des guides de prompt engineering de chatbots et de générateurs d'image, des formations sur certaines techniques IA à connaitre, des formations pour créér rapidement et gratuitement votre site web ou landing page...</p></li>
-    <li><strong>Idées de Business à lancer</strong> <p>Dès idées de business à lancer avec l'IA qui cartonnent vous sont également proposées.</p></li>
-    <li><strong>Formations Hebdomadaires</strong> <p>Des formations sur de nouvelles méthodes pour gagner de l'argent avec l'IA seront publiées chaque semaine.</p></li>
-    <li><strong>Liberté Totale</strong> <p>Vous êtes libre d'échanger dans le groupe ou de profiter uniquement des ressources exclusives misent à votre disposition.</p></li>
-
-    </ol>
+    <li><strong>Accès au Groupe :</strong> Après votre paiement, vous obtiendrez le lien d'accès. Cliquez sur ce dernier pour acceder au groupe.</li>
+    <li><strong>Formations de Bienvenue :</strong> Dans le groupe, vous aurez accès à des guides et formations de bienvenue : des guides de prompt engineering de chatbots et de générateurs d'image, des formations sur certaines techniques IA à connaitre, des formations pour créér rapidement et gratuitement votre site web ou landing page...</li>
+    <li><strong>Idées de Business à lancer :</strong> Dès idées de business à lancer avec l'IA qui cartonnent vous sont également proposées.</li>
+    <li><strong>Formations Hebdomadaires :</strong> Des formations sur de nouvelles méthodes pour gagner de l'argent avec l'IA seront publiées chaque semaine.</li>
+    <li><strong>Liberté Totale :</strong> Vous êtes libre d'échanger dans le groupe ou de profiter uniquement des ressources exclusives misent à votre disposition.</li>
     <p></p>
 
     <style>
@@ -610,72 +582,72 @@ function submitForm() {
   <h2>FAQ</h2>
   <p></p>
   <div class="faq-item">
-    <div class="question">Q: Quel est l'objectif de Elite IA ?</div>
+    <div class="question">Quel est l'objectif de Elite IA ?</div>
     <div class="answer">
-      A: L'objectif de Elite IA est de vous aider à faire de l'argent avec l'IA
+      L'objectif de Elite IA est de vous aider à faire de l'argent avec l'IA
     </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">Q: A qui s'adresse Elite IA ?</div>
+    <div class="question">A qui s'adresse Elite IA ?</div>
     <div class="answer">
-      A: Tous ceux qui aimeraient développer leur competence en intelligence artificielle et l'appliquer à leur business.
+      Tous ceux qui aimeraient développer leur competence en intelligence artificielle et l'appliquer à leur business.
     </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">Q: Quels avantages vais-je obtenir en tant que membre d'Elite IA ?</div>
+    <div class="question">Quels avantages vais-je obtenir en tant que membre d'Elite IA ?</div>
     <div class="answer">
-      A: En tant que membre d'Elite IA, vous accédez à un réseau exclusif, des avancées en intelligence artificielle, et des connaissances partagées en temps réel. Explorez des formations variées, des guides IA et des discussions qualitatives au sein du groupe Telegram. Vous aurez également des réductions exclusives sur nos autres outils et formations.
+      En tant que membre d'Elite IA, vous accédez à un réseau exclusif, des avancées en intelligence artificielle, et des connaissances partagées en temps réel. Explorez des formations variées, des guides IA et des discussions qualitatives au sein du groupe Telegram. Vous aurez également des réductions exclusives sur nos autres outils et formations.
     </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">Q: A quelles ressources aurais-je accès ?</div>
+    <div class="question">A quelles ressources aurais-je accès ?</div>
     <div class="answer">
-      A: Vous aurez accès à des guides et des formations diversifiés sur l'intelligence artificielle et le business en ligne pour développer vos compétences.
+      Vous aurez accès à des guides et des formations diversifiés sur l'intelligence artificielle et le business en ligne pour développer vos compétences.
     </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">Q: Quel est le prix de l'adhésion à Elite IA ?</div>
+    <div class="question">Quel est le prix de l'adhésion à Elite IA ?</div>
     <div class="answer">
-      A: L'adhésion à Elite IA est au prix de lancement exceptionnel de 19 euros par mois. Le prix passera à 49 euros par mois à compter du 1er Janvier.
+      L'adhésion à Elite IA est au prix de lancement exceptionnel de 19 euros par mois. Le prix passera à 49 euros par mois à compter du 1er Janvier.
     </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">Q: Comment puis-je annuler mon abonnement ?</div>
+    <div class="question">Comment puis-je annuler mon abonnement ?</div>
     <div class="answer">
-      A: Vous pouvez annuler votre abonnement à tout moment en écrivant le simple mot "résiliation" dans l'espace prévu dans le groupe.
+      Vous pouvez annuler votre abonnement à tout moment en écrivant le simple mot "résiliation" dans l'espace prévu dans le groupe.
     </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">Q: Puis-je bénéficier d'une période d'essai ?</div>
+    <div class="question">Puis-je bénéficier d'une période d'essai ?</div>
     <div class="answer">
-      A: En raison de l'accès immédiat au groupe après le paiement, une période d'essai n'est pas disponible. Cependant, nous nous efforçons de satisfaire nos membres et de fournir une expérience enrichissante.
+      En raison de l'accès immédiat au groupe après le paiement, une période d'essai n'est pas disponible. Cependant, nous nous efforçons de satisfaire nos membres et de fournir une expérience enrichissante.
     </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">Q: Comment sont animés les échanges au sein du groupe ?</div>
+    <div class="question">Comment sont animés les échanges au sein du groupe ?</div>
     <div class="answer">
-      A: Les échanges sont animés par moi-même et les autres membres du groupe qui sont tout autant actifs. Je participe aux conversations si necessaire et m'engage à assurer une communauté enrichissante.
+      Les échanges sont animés par moi-même et les autres membres du groupe qui sont tout autant actifs. Je participe aux conversations si necessaire et m'engage à assurer une communauté enrichissante.
     </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">Q: Quels partenaires avez-vous ?</div>
+    <div class="question">Quels partenaires avez-vous ?</div>
     <div class="answer">
-      A: Nous avons des partenaires comme FlexClip qui sont prêts à accorder des réductions exceptionnelles à nos membres.
+      Nous avons des partenaires comme FlexClip qui sont prêts à accorder des réductions exceptionnelles à nos membres.
     </div>
   </div>
 
   <div class="faq-item">
-    <div class="question">Q: Les débutants sont-ils acceptés ?</div>
+    <div class="question">Les débutants sont-ils acceptés ?</div>
     <div class="answer">
-      A: Absolument ! Nos vidéos formations prennent en compte tous les niveaux. Par contre, nous recherchons des personnes motivées de passer à l'action.
+      Absolument ! Nos vidéos formations prennent en compte tous les niveaux. Par contre, nous recherchons des personnes motivées de passer à l'action.
     </div>
   </div>
 
