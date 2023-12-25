@@ -1,65 +1,281 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: "Open Sans", sans-serif;
             margin: 0;
+            padding: 1rem;
+        }
+
+        .wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        ol {
+            list-style: none;
             padding: 0;
-            background-color: #f7f7f7;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+        li + li {
+            margin-top: 1rem;
         }
 
-        h2 {
-            color: #333;
-            text-align: center;
+        li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background: aliceblue;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            width: calc(100% - 2rem);
+            box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
         }
 
-        .review {
-            margin-top: 20px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
+        li::before {
+            counter-increment: list-item;
+            content: counter(list-item);
+            font-size: 3rem;
+            font-weight: 700;
+            width: 2em;
+            height: 2em;
+            background: black;
+            flex: 0 0 auto;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .reviewer {
-            font-style: italic;
-            color: #555;
-        }
-
-        .review-text {
-            color: #666;
+        li:nth-child(even) {
+            flex-direction: row-reverse;
+            background: lavender;
+            margin-right: -2rem;
+            margin-left: 2rem;
         }
     </style>
-    <title>Votre Site - Avis Clients</title>
+    <title>Prompts for Writing</title>
 </head>
 <body>
 
-    <div class="container">
-        <h2>Avis Clients</h2>
+<div class="wrapper">
+    <h1>Prompts pour la rédaction de blog</h1>
+    <ol role="list">
+        <li>Je recherche un [type d'article de blog] qui s'adresse directement à mon [personnage client idéal] et les persuade de [action souhaitée] sur mon [site web/produit].</li>
+        <li>Je cherche un [type d'article de blog] qui établira la confiance et la crédibilité auprès de mon [personnage client idéal] en mettant en avant les succès et les témoignages de clients précédents qui ont utilisé mon [produit/service].</li>
+        <li>J'ai besoin d'un [type d'article de blog] qui convaincra mon [personnage client idéal] d'acheter mon [produit/service] en mettant en avant ses avantages uniques et en répondant à d'éventuelles objections.</li>
+        <li>J'ai besoin d'un [type d'article de blog] qui incitera mon [personnage client idéal] à ressentir [émotion] à propos de mon [produit/service] et les persuadera de [action souhaitée] avec un sentiment d'urgence.</li>
+        <li>Je recherche un [type d'article de blog] qui surmontera les objections et les préoccupations que mon [personnage client idéal] pourrait avoir à propos de mon [produit/service] et les persuadera de [action souhaitée].</li>
+        <li>Je cherche un [type d'article de blog] qui mettra en avant les caractéristiques uniques et les avantages de mon [produit/service] auprès de [personnage client idéal] et les persuadera d'effectuer un achat.</li>
+        <li>Je recherche un [type d'article de blog] qui expliquera clairement les caractéristiques et les avantages de mon [produit/service] à [personnage client idéal] et les persuadera d'effectuer un achat avec un appel à l'action fort.</li>
+        <li>Je cherche un [type d'article de blog] qui attirera mon [personnage client idéal] avec un titre accrocheur, les convaincra de [action souhaitée] avec un langage persuasif et des preuves convaincantes.</li>
+        <li>J'ai besoin d'un [type d'article de blog] qui abordera les points de douleur et les besoins de mon [personnage client idéal] et leur montrera comment mon [produit/service] est la solution qu'ils recherchent.</li>
+        <li>J'ai besoin d'un [type d'article de blog] qui s'adresse directement aux besoins et aux points de douleur de mon [personnage client idéal] et les persuade de [action souhaitée] avec un sentiment d'urgence et une offre solide.</li>
+        <li>Je recherche un [type d'article de blog] qui mettra en avant la valeur et les avantages de mon [produit/service] auprès de [personnage client idéal] et les persuadera de [action souhaitée] avec des preuves sociales et des éléments renforçant la crédibilité.</li>
+        <li>Je recherche un [type d'article de blog] qui éduquera mon [personnage client idéal] sur un sujet spécifique et les persuadera de [action souhaitée] sur mon [site web/produit].</li>
+        <li>J'ai besoin d'un [type d'article de blog] qui racontera une histoire sur mon [produit/service] et comment il a aidé [personnage client idéal] à atteindre leur [objectif] de manière accessible et engageante.</li>
+        <li>Je recherche un [type d'article de blog] qui engagera mon [personnage client idéal] avec une perspective unique et convaincante sur [sujet] et les persuadera de [action souhaitée] sur mon [site web/produit].</li>
+        <li>J'ai besoin d'un [type d'article de blog] qui fournira des informations précieuses et pertinentes à mon [personnage client idéal] et les persuadera de [action souhaitée] sur mon [site web/produit].</li>
+    </ol>
 
-        <div class="review">
-            <p class="review-text">"Votre premier avis client ici. Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-            <p class="reviewer">- Nom du Client</p>
-        </div>
+    <h1>Prompts pour le marketing par e-mail</h1>
+    <ol role="list">
+        <li>J'ai besoin d'un [type d'e-mail] qui incitera mon [personnage client idéal] à ressentir [émotion] à propos de mon [produit/service] et les persuadera de [action souhaitée] avec un sentiment d'urgence.</li>
+        <li>Je cherche un [type d'e-mail] qui s'adressera directement aux besoins et aux points de douleur de mon [personnage client idéal] et les persuadera de [action souhaitée] avec un sentiment d'urgence et une offre solide.</li>
+        <li>J'ai besoin d'un [type d'e-mail] qui mettra en avant la valeur et les avantages de mon [produit/service] auprès de [personnage client idéal] et les convaincra de [action souhaitée] avec des preuves sociales et des éléments renforçant la crédibilité.</li>
+        <li>Je cherche un [type d'e-mail] qui expliquera clairement les caractéristiques et les avantages de mon [produit/service] à [personnage client idéal] et les persuadera de faire un achat avec un appel à l'action fort.</li>
+        <li>J'ai besoin d'un [type d'e-mail] qui convaincra mon [personnage client idéal] d'acheter mon [produit/service] en mettant en avant ses avantages uniques et en répondant à d'éventuelles objections.</li>
+        <li>Je recherche un [type d'e-mail] qui établira la confiance et la crédibilité auprès de mon [personnage client idéal] en mettant en avant les succès et les témoignages de clients précédents qui ont utilisé mon [produit/service].</li>
+        <li>J'ai besoin d'un [type d'e-mail] qui surmontera les objections et les préoccupations que mon [personnage client idéal] pourrait avoir à propos de mon [produit/service] et les persuadera de [action souhaitée].</li>
+        <li>Je cherche un [type d'e-mail] qui mettra en avant les caractéristiques uniques et les avantages de mon [produit/service] auprès de [personnage client idéal] et les persuadera d'effectuer un achat.</li>
+        <li>J'ai besoin d'un [type d'e-mail] qui racontera une histoire sur mon [produit/service] et comment il a aidé [personnage client idéal] à atteindre leur [objectif] de manière accessible et engageante.</li>
+        <li>Je recherche un [type d'e-mail] qui attirera mon [personnage client idéal] avec un titre accrocheur, les convaincra de [action souhaitée] avec un langage persuasif et des preuves convaincantes.</li>
+        <li>Je cherche un [type d'e-mail] qui expliquera clairement les caractéristiques et les avantages de mon [produit/service] à [personnage client idéal], les incitera à effectuer un achat.</li>
+        <li>J'ai besoin d'un [type d'e-mail] qui incitera mon [personnage client idéal] à ressentir [émotion] à propos de mon [produit/service] et les convaincra de [action souhaitée].</li>
+        <li>J'ai besoin d'un [type d'e-mail] qui persuadera mon [personnage client idéal] d'acheter mon [produit/service] en mettant en avant ses avantages uniques et en répondant à d'éventuelles objections.</li>
+        <li>Je recherche un [type d'e-mail] qui convaincra mon [personnage client idéal] de s'inscrire à mon [programme/abonnement] en expliquant la valeur qu'il apporte et les avantages qu'ils recevront.</li>
+        <li>J'ai besoin d'un [type d'e-mail] qui abordera les points de douleur et les besoins de mon [personnage client idéal] et leur montrera comment mon [produit/service] est la solution qu'ils recherchent.</li>
+    </ol>
 
-        <div class="review">
-            <p class="review-text">"Un autre avis client important. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-            <p class="reviewer">- Autre Client</p>
-        </div>
+    <h1>Prompts pour les scripts publicitaires pour YouTube</h1>
+    <ol role="list">
+        <li>"J'ai besoin d'un script publicitaire pour YouTube qui fournira des informations précieuses et pertinentes à mon [personnage client idéal] et les persuadera de [action souhaitée] sur mon [site web/produit]."</li>
+        <li>"J'ai besoin d'un script publicitaire pour YouTube qui mettra en avant les caractéristiques uniques et les avantages de mon [produit/service] auprès de mon [personnage client idéal] et les persuadera de faire un achat avec des preuves sociales et des éléments renforçant la crédibilité."</li>
+        <li>"J'ai besoin d'un script publicitaire pour YouTube qui surmontera les objections et les préoccupations que mon [personnage client idéal] pourrait avoir à propos de mon [produit/service] et les persuadera de [action souhaitée] avec un sentiment d'urgence."</li>
+        <li>"Je recherche un script publicitaire pour YouTube qui présentera mon [produit/service] à mon [personnage client idéal] et les persuadera de [action souhaitée] avec un appel à l'action fort et des visuels convaincants."</li>
+        <li>"Je recherche un script publicitaire pour YouTube qui mettra en avant la valeur et les avantages de mon [produit/service] auprès de mon [personnage client idéal] et les persuadera de [action souhaitée] avec une offre solide et un appel à l'action clair."</li>
+        <li>"Je recherche un script publicitaire pour YouTube qui expliquera clairement les caractéristiques et les avantages de mon [produit/service] à mon [personnage client idéal] et les persuadera de faire un achat avec un sentiment d'urgence."</li>
+        <li>"J'ai besoin d'un script publicitaire pour YouTube qui racontera une histoire sur mon [produit/service] et comment il a aidé mon [personnage client idéal] à atteindre leur [objectif] de manière accessible et engageante."</li>
+        <li>"Je recherche un script publicitaire pour YouTube qui attirera mon [personnage client idéal] avec un titre accrocheur et les persuadera de [action souhaitée] avec un langage persuasif et des preuves convaincantes."</li>
+        <li>"Je recherche un script publicitaire pour YouTube qui s'adressera directement aux besoins et aux points de douleur de mon [personnage client idéal] et les persuadera de [action souhaitée] avec un sentiment d'urgence et une offre solide."</li>
+        <li>"J'ai besoin d'un script publicitaire pour YouTube qui abordera les points de douleur et les besoins de mon [personnage client idéal] et leur montrera comment mon [produit/service] est la solution qu'ils recherchent."</li>
+        <li>"Je recherche un script publicitaire pour YouTube qui établira la confiance et la crédibilité auprès de mon [personnage client idéal] en mettant en avant les succès et les témoignages de clients précédents qui ont utilisé mon [produit/service]."</li>
+        <li>"J'ai besoin d'un script publicitaire pour YouTube qui éduquera mon [personnage client idéal] sur un sujet spécifique et les persuadera de [action souhaitée] sur mon [site web/produit]."</li>
+        <li>"J'ai besoin d'un script publicitaire pour YouTube qui mettra en avant les points de vente uniques de mon [produit/service] et persuadera mon [personnage client idéal] de faire un achat avec un sentiment d'urgence et des offres exclusives."</li>
+        <li>"Je recherche un script publicitaire pour YouTube qui attirera mon [personnage client idéal] avec un message authentique, puis les persuadera de [action souhaitée] avec un appel à l'action fort et des visuels convaincants."</li>
+        <li>"Je recherche un script publicitaire pour YouTube qui engagera mon [personnage client idéal] avec une perspective unique et convaincante sur [sujet] et les persuadera de [action souhaitée] sur mon [site web/produit]."</li>
+    </ol>
 
-        <!-- Ajoutez d'autres avis ici -->
+    <h1>Prompts pour la rédaction de publicités Facebook</h1>
+    <ol role="list">
+        <li>"Je recherche une accroche publicitaire Facebook qui utilisera l'influence et la portée de mon [marque/entreprise] pour générer du trafic et des ventes pour mon [produit/service] auprès de mon [personnage client idéal]."</li>
+        <li>"J'ai besoin d'une accroche publicitaire Facebook qui créera un sentiment de communauté et d'appartenance pour mon [personnage client idéal] en mettant en avant du contenu généré par les utilisateurs et en les encourageant à partager leurs propres expériences avec mon [produit/service]."</li>
+        <li>"Je recherche une accroche publicitaire Facebook qui offrira un aperçu des prochains produits ou services et suscitera un sentiment d'anticipation et d'excitation chez mon [personnage client idéal] avec un appel à l'action clair et convaincant."</li>
+        <li>"J'ai besoin d'une accroche publicitaire Facebook qui exploitera l'autorité et l'expertise de mon [marque/entreprise] pour éduquer mon [personnage client idéal] sur les avantages de mon [produit/service] et les persuader de faire un achat."</li>
+        <li>"J'ai besoin d'une accroche publicitaire Facebook qui utilisera l'authenticité et la pertinence de mon [marque/entreprise] pour engager mon [personnage client idéal] et les persuader de [action souhaitée] sur mon [produit/service]."</li>
+        <li>"Je recherche une accroche publicitaire Facebook qui mettra en avant les expériences uniques et personnelles de mon [personnage client idéal] avec mon [produit/service] et les encouragera à partager leur avis positif avec leurs abonnés."</li>
+        <li>"Je recherche une accroche publicitaire Facebook qui exploitera la preuve sociale et la crédibilité de mon [marque/entreprise] pour persuader mon [personnage client idéal] d'essayer mon [produit/service] et de partager leur expérience positive avec leurs abonnés."</li>
+        <li>"J'ai besoin d'une accroche publicitaire Facebook qui engagera mon [personnage client idéal] avec une campagne visuelle unique et créative mettant en valeur les caractéristiques et les avantages de mon [produit/service] de manière convaincante."</li>
+        <li>"J'ai besoin d'une accroche publicitaire Facebook qui créera un sentiment d'urgence et de FOMO pour mon [personnage client idéal] en proposant des offres exclusives et des promotions pour mon [produit/service]."</li>
+        <li>"J'ai besoin d'une accroche publicitaire Facebook qui exploitera l'autorité et la crédibilité de [type d'influenceur] pour éduquer mon [personnage client idéal] sur les avantages de mon [produit/service] et les persuader de l'essayer par eux-mêmes."</li>
+        <li>"J'ai besoin d'une accroche publicitaire Facebook qui exploitera la portée et l'influence de [type d'influenceur] pour générer du trafic et des ventes pour mon [produit/service] auprès de mon [personnage client idéal]."</li>
+        <li>"Je recherche une accroche publicitaire Facebook qui utilisera la preuve sociale et la crédibilité de [type d'influenceur] pour persuader mon [personnage client idéal] d'essayer mon [produit/service] et de partager leur expérience positive avec leurs abonnés."</li>
+        <li>"Je recherche une accroche publicitaire Facebook qui utilisera l'influence et la portée de [type d'influenceur] pour mettre en avant les caractéristiques et les avantages uniques de mon [produit/service] auprès de mon [personnage client idéal] et les encouragera à effectuer un achat."</li>
+        <li>"J'ai besoin d'une accroche publicitaire Facebook qui engagera mon [personnage client idéal] avec [type de contenu spécifique] de [type d'influenceur] qui peut partager de manière authentique les avantages de mon [produit/service] et les encouragera à effectuer un achat."</li>
+        <li>"Je recherche une accroche publicitaire Facebook qui créera un sentiment de communauté et d'appartenance pour mon [personnage client idéal] en mettant en avant du contenu généré par les utilisateurs et en les encourageant à partager leurs propres expériences avec mon [produit/service] avec l'aide de [type d'influenceur]."</li>
+    </ol>
 
-    </div>
+    <h1>Prompts pour les vidéos YouTube</h1>
+    <ol role="list">
+        <li>"J'ai besoin d'une idée de vidéo YouTube qui deviendra virale et persuadera mon [personnage client idéal] de [action souhaitée] sur mon [site web/produit] avec un appel à l'action fort et des visuels convaincants."</li>
+        <li>"Je recherche une idée de vidéo YouTube qui racontera une histoire unique et accessible sur mon [produit/service] et comment il a aidé mon [personnage client idéal] à atteindre leur [objectif]."</li>
+        <li>"J'ai besoin d'une idée de vidéo YouTube qui mettra en avant de manière amusante et créative les caractéristiques et les avantages uniques de mon [produit/service] et persuadera mon [personnage client idéal] d'effectuer un achat."</li>
+        <li>"Je recherche une idée de vidéo YouTube qui mettra en avant la valeur et les avantages de mon [produit/service] pour mon [personnage client idéal] et les persuadera de [action souhaitée] avec une offre solide et un appel à l'action clair."</li>
+        <li>"Je recherche une idée de vidéo YouTube qui fournira des informations précieuses et pertinentes à mon [personnage client idéal] sur [sujet] et les persuadera de [action souhaitée] sur mon [site web/produit]."</li>
+        <li>"J'ai besoin d'une idée de vidéo YouTube qui surmontera les objections et les préoccupations que mon [personnage client idéal] pourrait avoir à propos de mon [produit/service] et les persuadera de [action souhaitée] avec un sentiment d'urgence."</li>
+        <li>"Je recherche une idée de vidéo YouTube qui deviendra virale et mettra en avant mon [produit/service] auprès de mon [personnage client idéal] de manière créative et divertissante."</li>
+        <li>"J'ai besoin d'une idée de vidéo YouTube qui mettra en avant les succès des clients précédents qui ont utilisé mon [produit/service] et persuadera mon [personnage client idéal] d'effectuer un achat."</li>
+        <li>"J'ai besoin d'une idée de vidéo YouTube qui engagera mon [personnage client idéal] avec une perspective unique et convaincante sur [sujet] et les persuadera de [action souhaitée] sur mon [site web/produit]."</li>
+        <li>"J'ai besoin d'une idée de vidéo YouTube qui offrira un aperçu des coulisses de mon [entreprise/marque] et persuadera mon [personnage client idéal] de [action souhaitée] avec authenticité et pertinence."</li>
+        <li>"Je recherche une idée de vidéo YouTube qui fournira un guide étape par étape sur l'utilisation de mon [produit/service] et persuadera mon [personnage client idéal] d'effectuer un achat avec des instructions claires et convaincantes."</li>
+        <li>"Je recherche une idée de vidéo YouTube qui attirera mon [personnage client idéal] avec un message authentique et authentique, puis les persuadera de [action souhaitée] avec un appel à l'action fort et des visuels convaincants."</li>
+        <li>"Je recherche une idée de vidéo YouTube qui mettra en avant les points de vente uniques de mon [produit/service] et persuadera mon [personnage client idéal] d'effectuer un achat avec un sentiment d'urgence et des offres exclusives."</li>
+        <li>"J'ai besoin d'une idée de vidéo YouTube qui démontrera comment mon [produit/service] peut résoudre les points de douleur spécifiques et les besoins de mon [personnage client idéal] de manière accessible et engageante."</li>
+        <li>"J'ai besoin d'une idée de vidéo YouTube qui comparera mon [produit/service] à des options similaires sur le marché et persuadera mon [personnage client idéal] de nous choisir avec des preuves claires et convaincantes."</li>
+    </ol>
+
+    <h1>Prompts pour les fils Twitter</h1>
+    <ol role="list">
+        <li>"Je recherche une idée de fil Twitter qui fournira des informations précieuses et pertinentes à mon [personnage client idéal] sur [sujet] et attirera des prospects de haute qualité avec un appel à l'action fort."</li>
+        <li>"Je recherche une idée de fil Twitter qui racontera une histoire unique et accessible sur mon [produit/service] et comment il a aidé mon [personnage client idéal] à atteindre leur [objectif]."</li>
+        <li>"J'ai besoin d'une idée de fil Twitter qui mettra en avant de manière amusante et créative les caractéristiques et les avantages uniques de mon [produit/service] et attirera des prospects de haute qualité avec une offre solide."</li>
+        <li>"J'ai besoin d'une idée de fil Twitter qui deviendra à la fois virale et attirera des prospects de haute qualité pour mon [produit/service] avec un appel à l'action fort et des visuels convaincants."</li>
+        <li>"Je recherche une idée de fil Twitter qui mettra en avant la valeur et les avantages de mon [produit/service] pour mon [personnage client idéal] et les persuadera de [action souhaitée] avec un message clair et convaincant."</li>
+        <li>"J'ai besoin d'une idée de fil Twitter qui surmontera les objections et les préoccupations que mon [personnage client idéal] pourrait avoir à propos de mon [produit/service] et les persuadera de [action souhaitée] avec un sentiment d'urgence."</li>
+        <li>"J'ai besoin d'une idée de fil Twitter qui engagera mon [personnage client idéal] avec une perspective unique et convaincante sur [sujet] et les persuadera de [action souhaitée] sur mon [site web/produit]."</li>
+        <li>"Je recherche une idée de fil Twitter qui démontrera comment mon [produit/service] peut résoudre les points de douleur spécifiques et les besoins de mon [personnage client idéal] de manière accessible et engageante."</li>
+        <li>"Je recherche une idée de fil Twitter qui deviendra virale et mettra en avant mon [produit/service] auprès de mon [personnage client idéal] de manière créative et engageante."</li>
+        <li>"Je recherche une idée de fil Twitter qui établira la confiance et la crédibilité auprès de mon [personnage client idéal] en mettant en avant les histoires de succès des clients précédents qui ont utilisé mon [produit/service]."</li>
+        <li>"Je recherche une idée de fil Twitter qui comparera mon [produit/service] à des options similaires sur le marché et persuadera mon [personnage client idéal] de nous choisir avec des preuves claires et convaincantes."</li>
+        <li>"Je recherche une idée de fil Twitter qui offrira un aperçu des coulisses de mon [entreprise/marque] et persuadera mon [personnage client idéal] de [action souhaitée] avec authenticité et pertinence."</li>
+        <li>"J'ai besoin d'une idée de fil Twitter qui mettra en avant les points de vente uniques de mon [produit/service] et attirera des prospects de haute qualité avec un sentiment d'urgence et des offres exclusives."</li>
+        <li>"J'ai besoin d'une idée de fil Twitter qui fournira un guide étape par étape sur l'utilisation de mon [produit/service] et attirera des prospects de haute qualité avec des instructions claires et convaincantes."</li>
+        <li>"J'ai besoin d'une idée de fil Twitter qui attirera mon [personnage client idéal] avec un message authentique et authentique, puis les persuadera de [action souhaitée] avec un appel à l'action fort et des visuels convaincants."</li>
+    </ol>
+
+    <h1>Prompts pour des messages directs (DM) froids</h1>
+    <ol role="list">
+        <li>"Je recherche une idée de message direct (DM) froid qui utilisera l'influence et la portée de mon [marque/entreprise] pour générer du trafic et des ventes pour mon [produit/service] auprès de mon [personnage client idéal]."</li>
+        <li>"J'ai besoin d'une idée de message direct (DM) froid qui fournira des informations précieuses et pertinentes à mon [personnage client idéal] sur [sujet] et les persuadera de [action souhaitée] avec un message personnalisé."</li>
+        <li>"J'ai besoin d'une idée de message direct (DM) froid qui attirera mon [personnage client idéal] avec un message authentique et authentique, puis les persuadera de [action souhaitée] avec un appel à l'action fort et des visuels convaincants."</li>
+        <li>"Je recherche une idée de message direct (DM) froid qui mettra en avant de manière claire et convaincante les caractéristiques et les avantages uniques de mon [produit/service] pour mon [personnage client idéal]."</li>
+        <li>"Je recherche une idée de message direct (DM) froid qui fournira un guide étape par étape sur l'utilisation de mon [produit/service] et persuadera mon [personnage client idéal] de faire un achat avec des instructions claires et convaincantes."</li>
+        <li>"J'ai besoin d'une idée de message direct (DM) froid qui mettra en avant les succès des clients précédents qui ont utilisé mon [produit/service] et persuadera mon [personnage client idéal] de faire un achat avec un message personnalisé."</li>
+        <li>"Je recherche une idée de message direct (DM) froid qui exploitera l'authenticité et la pertinence de mon [marque/entreprise] pour engager mon [personnage client idéal] et les persuadera de [action souhaitée]."</li>
+        <li>"Je recherche une idée de message direct (DM) froid qui engagera mon [personnage client idéal] avec une offre unique et exclusive et les persuadera de [action souhaitée] avec un sentiment d'urgence et d'exclusivité."</li>
+        <li>"J'ai besoin d'une idée de message direct (DM) froid qui créera un sentiment de communauté et d'appartenance pour mon [personnage client idéal] en mettant en avant du contenu généré par les utilisateurs et en les encourageant à partager leurs propres expériences avec mon [produit/service]."</li>
+        <li>"J'ai besoin d'une idée de message direct (DM) froid qui exploitera l'authenticité et la pertinence de mon [marque/entreprise] pour engager mon [personnage client idéal] et les persuadera de [action souhaitée] sur mon [produit/service]."</li>
+        <li>"Je recherche une idée de message direct (DM) froid qui offrira un aperçu des prochains produits ou services et suscitera un sentiment d'anticipation et d'excitation chez mon [personnage client idéal] avec un appel à l'action clair et convaincant."</li>
+        <li>"J'ai besoin d'une idée de message direct (DM) froid qui engagera mon [personnage client idéal] avec une campagne visuelle unique et créative qui mettra en avant les caractéristiques et les avantages de mon [produit/service] de manière convaincante."</li>
+        <li>"Je recherche une idée de message direct (DM) froid qui exploitera la preuve sociale et la crédibilité de mon [marque/entreprise] pour persuader mon [personnage client idéal] de tester mon [produit/service] et de partager leur expérience positive avec leurs abonnés."</li>
+        <li>"J'ai besoin d'une idée de message direct (DM) froid qui exploitera l'autorité et l'expertise de mon [marque/entreprise] pour éduquer mon [personnage client idéal] sur les avantages de mon [produit/service] et les persuadera de faire un achat."</li>
+        <li>"Je recherche une idée de message direct (DM) froid qui mettra en avant les expériences personnelles et uniques de mon [personnage client idéal] avec mon [produit/service] et les persuadera de partager leur critique positive avec leurs abonnés."</li>
+    </ol>
+
+    <h1>Prompts pour les courriels froids (Cold Email)</h1>
+    <ol role="list">
+      <li>"J'ai besoin d'une idée de courriel froid qui démontrera comment mon [produit/service] peut résoudre les points de douleur spécifiques et les besoins de mon [personnage client idéal] de manière accessible et engageante."</li>
+      <li>"J'ai besoin d'une idée de courriel froid qui établira la crédibilité et l'autorité auprès de mon [personnage client idéal] en mettant en avant les histoires de réussite des clients précédents qui ont utilisé mon [produit/service]."</li>
+      <li>"Je recherche une idée de courriel froid qui attirera l'attention de mon [personnage client idéal] et les persuadera de [action souhaitée] avec une ligne d'objet unique et convaincante."</li>
+      <li>"J'ai besoin d'une idée de courriel froid qui fournira des informations précieuses et pertinentes à mon [personnage client idéal] sur [sujet] et les persuadera de [action souhaitée] avec un message clair et convaincant."</li>
+      <li>"Je recherche une idée de courriel froid qui attirera mon [personnage client idéal] avec un message authentique et authentique, puis les persuadera de [action souhaitée] avec un appel à l'action fort et des visuels convaincants."</li>
+      <li>"J'ai besoin d'une idée de courriel froid qui comparera mon [produit/service] à des options similaires sur le marché et persuadera mon [personnage client idéal] de nous choisir avec des preuves claires et convaincantes."</li>
+      <li>"Je recherche une idée de courriel froid qui surmontera les objections et les préoccupations que mon [personnage client idéal] pourrait avoir à propos de mon [produit/service] et les convaincra de [action souhaitée] avec un sentiment d'urgence."</li>
+      <li>"Je recherche une idée de courriel froid qui établira la confiance et la crédibilité auprès de mon [personnage client idéal] en mettant en avant l'expertise et le professionnalisme de mon [entreprise/marque]."</li>
+      <li>"Je recherche une idée de courriel froid qui fournira un guide étape par étape sur l'utilisation de mon [produit/service] et persuadera mon [personnage client idéal] de faire un achat avec des instructions claires et convaincantes."</li>
+      <li>"J'ai besoin d'une idée de courriel froid qui offrira un aperçu des coulisses de mon [entreprise/marque] et persuadera mon [personnage client idéal] de [action souhaitée] avec authenticité et pertinence."</li>
+      <li>"J'ai besoin d'une idée de courriel froid qui utilisera une approche personnalisée et ciblée pour engager mon [personnage client idéal] et les persuadera de [action souhaitée] avec un message clair et convaincant."</li>
+      <li>"J'ai besoin d'une idée de courriel froid qui engagera mon [personnage client idéal] avec une perspective unique et convaincante sur [sujet] et les persuadera de [action souhaitée] sur mon [site web/produit]."</li>
+      <li>"Je recherche une idée de courriel froid qui mettra en avant les avantages et la valeur de mon [produit/service] pour mon [personnage client idéal] et les persuadera de faire un achat avec un appel à l'action fort."</li>
+      <li>"J'ai besoin d'une idée de courriel froid qui offrira une offre unique et convaincante à mon [personnage client idéal] et les persuadera de [action souhaitée] avec un sentiment d'urgence et d'exclusivité."</li>
+      <li>"Je recherche une idée de courriel froid qui mettra en avant les points de vente uniques de mon [produit/service] et persuadera mon [personnage client idéal] de faire un achat avec un sentiment d'urgence et des offres exclusives."</li>
+    </ol>
+
+    <h1>Prompts pour le marketing d'influence</h1>
+    <ol role="list">
+      <li>"Je recherche un plan de campagne de marketing d'influence qui mettra en avant mon [produit/service] auprès de mon [personnage client idéal] et les persuadera de [action souhaitée] avec l'aide de [type d'influenceur] qui correspond à nos valeurs de marque."</li>
+      <li>"J'ai besoin d'un plan de campagne de marketing d'influence qui ciblera mon [personnage client idéal] avec [type de contenu spécifique] de [type d'influenceur] qui peut mettre en avant les caractéristiques et les avantages uniques de notre [produit/service] de manière amusante et créative."</li>
+      <li>"J'ai besoin d'un plan de campagne de marketing d'influence qui ciblera mon [personnage client idéal] avec [type de contenu spécifique] de [type d'influenceur] qui peut partager de manière authentique les avantages de notre [produit/service] et les encourager à faire un achat."</li>
+      <li>"Je recherche un plan de campagne de marketing d'influence qui exploitera l'autorité et la crédibilité de [type d'influenceur] pour persuader mon [personnage client idéal] de tester notre [produit/service] et de partager leur expérience positive avec leurs abonnés."</li>
+      <li>"J'ai besoin d'un plan de campagne de marketing d'influence qui exploitera l'autorité et l'expertise de [type d'influenceur] pour éduquer mon [personnage client idéal] sur les avantages de notre [produit/service] et les persuadera de faire un achat."</li>
+      <li>"J'ai besoin d'un plan de campagne de marketing d'influence qui ciblera mon [personnage client idéal] avec [type de contenu spécifique] de [type d'influenceur] qui peut mettre en avant les caractéristiques et les avantages uniques de notre [produit/service] de manière convaincante et authentique."</li>
+      <li>"Je recherche un plan de campagne de marketing d'influence qui exploitera la portée et l'influence de [type d'influenceur] pour sensibiliser et vendre notre [produit/service] à mon [personnage client idéal]."</li>
+      <li>"J'ai besoin d'un plan de campagne de marketing d'influence qui créera un sentiment d'urgence et de FOMO pour mon [personnage client idéal] en mettant en avant [type d'influenceur] qui peut partager des offres exclusives et des promotions pour notre [produit/service]."</li>
+      <li>"Je recherche un plan de campagne de marketing d'influence qui exploitera la preuve sociale et la crédibilité de [type d'influenceur] pour persuader mon [personnage client idéal] de tester notre [produit/service] et de partager leur expérience positive avec leurs abonnés."</li>
+      <li>"Je recherche un plan de campagne de marketing d'influence qui ciblera mon [personnage client idéal] avec [type de contenu spécifique] de [type d'influenceur] qui peut fournir des informations précieuses et pertinentes sur notre [produit/service] et les encourager à prendre [action souhaitée]."</li>
+      <li>"Je recherche un plan de campagne de marketing d'influence qui utilisera l'influence et la portée de [type d'influenceur] pour générer du trafic et des ventes pour notre [produit/service] auprès de mon [personnage client idéal]."</li>
+      <li>"Je recherche un plan de campagne de marketing d'influence qui exploitera la preuve sociale et la crédibilité de [type d'influenceur] pour persuader mon [personnage client idéal] de tester notre [produit/service] et de partager leur expérience positive avec leurs abonnés."</li>
+      <li>"J'ai besoin d'un plan de campagne de marketing d'influence qui exploitera l'authenticité et l'identificabilité de [type d'influenceur] pour engager mon [personnage client idéal] et les persuadera de [action souhaitée]."</li>
+      <li>"Je recherche un plan de campagne de marketing d'influence qui ciblera mon [personnage client idéal] avec [type de contenu spécifique] de [type d'influenceur] qui peut fournir des informations précieuses et pertinentes sur notre [produit/service] et les encourager à prendre [action souhaitée]."</li>
+      <li>"J'ai besoin d'un plan de campagne de marketing d'influence qui exploitera l'authenticité et l'identificabilité de [type d'influenceur] pour engager mon [personnage client idéal] et les persuadera de [action souhaitée] concernant notre [produit/service]."</li>
+    </ol>
+
+    <h1>Prompts pour la Rédaction Publicitaire (Copywriting)</h1>
+    <ol role="list">
+      <li>"J'ai besoin d'un [type de texte] qui abordera les points de douleur et les besoins de mon [personnage client idéal] et leur montrera comment mon [produit/service] est la solution qu'ils recherchent."</li>
+      <li>"Je recherche un texte qui convaincra [personnage client idéal] de s'inscrire à mon [programme/abonnement] en expliquant la valeur qu'il apporte et les avantages qu'ils recevront."</li>
+      <li>"Merci d'écrire une légende de réseaux sociaux convaincante qui s'adresse directement à mon [personnage client idéal] et les encourage à prendre [action souhaitée] sur mon [site web/produit]."</li>
+      <li>"J'ai besoin d'une description de produit qui persuadera [personnage client idéal] d'acheter mon [produit/service] en mettant en avant ses avantages uniques et en abordant d'éventuelles objections."</li>
+      <li>"Je recherche un texte publicitaire qui attirera mon [personnage client idéal] avec un titre accrocheur et un message d'accroche percutant, puis les convaincra de [action souhaitée] avec un langage persuasif et des preuves convaincantes."</li>
+      <li>"J'ai besoin d'un texte publicitaire qui fera ressentir à mon [personnage client idéal] [émotion] à propos de mon [produit/service] et les convaincra de [action souhaitée]."</li>
+      <li>"Je recherche un texte pour le site web qui expliquera les caractéristiques et les avantages de mon [produit/service] à [personnage client idéal] de manière claire et concise, les incitant ainsi à effectuer un achat."</li>
+      <li>"J'ai besoin d'une étude de cas qui racontera l'histoire de mon [produit/service] et comment il a aidé [personnage client idéal] à atteindre leur [objectif] de manière engageante et facilement compréhensible."</li>
+      <li>"Je recherche un script promotionnel qui s'adressera directement aux besoins et aux points de douleur de mon [personnage client idéal] et les persuadera de [action souhaitée] avec un sentiment d'urgence et une offre solide."</li>
+      <li>"Je recherche un texte publicitaire qui mettra en avant les caractéristiques et les avantages uniques de mon [produit/service] pour [personnage client idéal] et les persuadera d'effectuer un achat."</li>
+      <li>"J'ai besoin d'un [type de texte] qui surmontera les objections et les préoccupations que mon [personnage client idéal] pourrait avoir à propos de mon [produit/service] et les convaincra de [action souhaitée]."</li>
+      <li>"J'ai besoin d'un [type de texte] qui mettra en valeur la valeur et les avantages de mon [produit/service] auprès de [personne idéale client] et les convaincra de prendre [action souhaitée] en utilisant des éléments de preuve sociale et de renforcement de la crédibilité."</li>
+      <li>"Je recherche un [type de texte] qui expliquera clairement les caractéristiques et les avantages de mon [produit/service] à [personne idéale client] et les persuadera de faire un achat avec un appel à l'action fort."</li>
+      <li>"J'ai besoin d'un [type de texte] qui fera ressentir [émotion] à [personne idéale client] à propos de mon [produit/service] et les persuadera de prendre [action souhaitée] avec un sentiment d'urgence."</li>
+      <li>"Je recherche un [type de texte] qui établira la confiance et la crédibilité auprès de [personne idéale client] en mettant en avant les réussites et les témoignages des clients précédents qui ont utilisé mon [produit/service]."</li>
+    </ol>
+
+    <h1>Prompts pour les Story Instagram</h1>
+    <ol role="list">
+      <li>"Je cherche une idée de Story Instagram qui engagera mon [personnage client idéal] avec du contenu en coulisses et les persuadera de [action souhaitée] avec un sentiment d'exclusivité et d'authenticité."</li>
+      <li>"J'ai besoin d'une idée de Story Instagram qui fournira des informations précieuses et pertinentes à mon [personnage client idéal] sur [sujet] et les persuadera de [action souhaitée] avec un message clair et convaincant."</li>
+      <li>"J'ai besoin d'une idée de Story Instagram qui mettra en avant les histoires à succès des clients précédents qui ont utilisé mon [produit/service] et persuadera mon [personnage client idéal] de faire un achat."</li>
+      <li>"Je recherche une idée de Story Instagram qui exploitera l'authenticité et la facilité de relation de mon [marque/entreprise] pour engager mon [personnage client idéal] et les persuader de [action souhaitée]."</li>
+      <li>"Je cherche une idée de Story Instagram qui mettra en avant les caractéristiques et les avantages uniques de mon [produit/service] pour mon [personnage client idéal] de manière créative et engageante."</li>
+      <li>"J'ai besoin d'une idée de Story Instagram qui attirera mon [personnage client idéal] avec un message authentique et convaincant, puis les persuadera de [action souhaitée] avec un appel à l'action fort et des visuels convaincants."</li>
+      <li>"Je cherche une idée de Story Instagram qui fournira un guide étape par étape sur la manière d'utiliser mon [produit/service] et persuadera mon [personnage client idéal] de faire un achat avec des instructions claires et convaincantes."</li>
+      <li>"J'ai besoin d'une idée de Story Instagram qui exploitera la preuve sociale et la crédibilité des clients précédents pour persuader mon [personnage client idéal] d'essayer mon [produit/service]."</li>
+      <li>"J'ai besoin d'une idée de Story Instagram qui fournira un aperçu des futurs produits ou services et créera un sentiment d'anticipation et d'excitation chez mon [personnage client idéal] avec un appel à l'action clair et convaincant."</li>
+      <li>"Je cherche une idée de Story Instagram qui comparera mon [produit/service] à des options similaires sur le marché et persuadera mon [personnage client idéal] de nous choisir grâce à des preuves claires et convaincantes."</li>
+      <li>"Je cherche une idée de Story Instagram qui créera un sentiment de communauté et d'appartenance pour mon [personnage client idéal] en mettant en avant du contenu généré par les utilisateurs et en les encourageant à partager leurs propres expériences avec mon [produit/service]."</li>
+      <li>"J'ai besoin d'une idée de Story Instagram qui démontrera comment mon [produit/service] peut résoudre de manière engageante et authentique les points de douleur et les besoins spécifiques de mon [personnage client idéal]."</li>
+      <li>"J'ai besoin d'une idée de Story Instagram qui établira la confiance et la crédibilité avec mon [personnage client idéal] en mettant en avant l'expertise et le professionnalisme de mon [entreprise/marque]."</li>
+      <li>"J'ai besoin d'une idée de Story Instagram qui mettra en avant les expériences uniques et personnelles de mon [personnage client idéal] avec mon [produit/service] et les persuadera de partager leur avis positif avec leurs abonnés."</li>
+      <li>"Je cherche une idée de Story Instagram qui offrira une offre unique et convaincante à mon [personnage client idéal] et les persuadera de [action souhaitée] avec un sentiment d'urgence et d'exclusivité."</li>
+    </ol>
+</div>
 
 </body>
 </html>
