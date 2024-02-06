@@ -89,8 +89,8 @@ button.signup {
 	text-decoration:underline;
 	color: #ffffff;
 	border-radius:10px;
-	width: 200px;
-	height: 60px;
+	width: 100px;
+	height: 42px;
 	border: 0px;
 	cursor: pointer;
 	transform: scale(0.9);
@@ -101,7 +101,7 @@ button.signup {
 
 .user-signup input,
 .user-signup textarea {
-      width: 250px;
+      width: 200px;
       border: 1px solid #3498db;
       border-radius: 10px;
       padding: 10px;
@@ -521,16 +521,6 @@ function submitForm() {
   <div class="notice">
     <h2 style="text-align: center">+50 Prompts Exceptionnels</h2>
     <p style="text-align: center"><img src="images/leakgpt1.png" width="100%" style="text-align:center" alt="LeakGPT img"></p>
-    <p><br></p>
-    <h2 style="text-align: center">100% Satisfaction Client</h2>
-    <p style="text-align: center"><img src="images/avislg1.png" width="60%" style="text-align:center" alt="Avis 1"></p>
-    <p style="text-align: center"><img src="images/avislg2.png" width="60%" style="text-align:center" alt="Avis 2"></p>
-    <p style="text-align: center"><img src="images/avislg3.png" width="60%" style="text-align:center" alt="Avis 3"></p>
-    <p><br></p>
-    <h2 style="text-align: center">x100 Votre Prompt Engineering</h2>
-    <p style="text-align: center"><img src="images/prof.jpeg" width="100%" style="text-align:center" alt="Prof"></p>
-    <h3 style="text-align: center">Servez-vous-en comme tremplin pour apprendre le prompt engineering et créer vos prompts GPTs.</h3>
-    <p></p>
     <style>
       #legal {
           text-decoration: underline;
@@ -558,33 +548,6 @@ function submitForm() {
           color: #666;
       }
   </style>
-  <p><br></p>
-  <h2 style="text-align: center">FAQ</h2>
-  <p></p>
-  <div class="faq-item">
-    <div class="question">Qu'est-ce que LeakGPT ?</div>
-    <div class="answer">
-      LeakGPT est une librairie des prompts qui se cachent derrière les GPTs les plus performants du marché. C'est une mine d'or d'inspiration pour créer vos propres GPTs.
-    </div>
-  </div>
-  <div class="faq-item">
-    <div class="question">Que vais-je recevoir ?</div>
-    <div class="answer">
-      Vous allez recevoir un PDF de 55 pages qui contient +50 prompts surpuissants et les liens des GPTs associés.
-    </div>
-  </div>
-  <div class="faq-item">
-    <div class="question">Puis-je tester les GPTs ?</div>
-    <div class="answer">
-      Bien sûr. Les liens des GPTs sont fournis dans le PDF.
-    </div>
-  </div>
-  <div class="faq-item">
-    <div class="question">J'ai encore des questions...</div>
-    <div class="answer">
-      Notre équipe d'assistance est là pour vous aider. Contactez-nous via le support client, et nous répondrons à toutes vos questions dans les plus brefs délais.
-    </div>
-  </div>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const questions = document.querySelectorAll('.question');
@@ -598,28 +561,6 @@ function submitForm() {
     });
   </script>
 
-  <h4 style="text-align: center" id="legal" onclick="toggleLegalContent()">Légal et Garantie</h4>
-  <div class="legal-content">
-      <h2>Satisfaction Garantie</h2>
-      <p>Chez AltruistMinute, nous nous engageons à offrir une expérience exceptionnelle à nos clients. Nous croyons en la qualité de nos produits et services liés à l'Intelligence Artificielle (IA), et nous sommes fiers de les mettre à votre disposition. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de votre achat, nous ferons tout en notre pouvoir pour résoudre vos préoccupations. Nous offrons une garantie de satisfaction client à 100 %.</p>
-
-      <h2>Garantie Légale</h2>
-      <p>AltruistMinute respecte toutes les lois et réglementations applicables en matière de commerce électronique et de protection du consommateur. Nos produits et services sont conformes aux normes légales en vigueur, et nous travaillons constamment à maintenir notre entreprise en pleine conformité avec les réglementations.</p>
-
-      <h2>Confidentialité et Sécurité des Données</h2>
-      <p>Nous comprenons l'importance de la confidentialité de vos données. AltruistMinute s'engage à protéger vos informations personnelles et à les utiliser uniquement dans le but de vous fournir les produits et services que vous avez achetés.</p>
-
-      <h2>Assistance Client</h2>
-      <p>Notre équipe d'assistance est à votre disposition pour répondre à toutes vos questions et vous aider en cas de besoin. Si vous avez des préoccupations concernant votre achat, des questions sur nos produits ou des demandes spécifiques, n'hésitez pas à nous contacter. Nous sommes là pour vous aider.</p>
-
-			<h2>Propriété Intellectuelle</h2>
-			<p>Tous les éléments du site altruistminute.com, qu’il s’agisse de textes, d’images, de graphismes ou de logos, sont protégés par les droits de propriété intellectuelle. Toute reproduction ou utilisation sans autorisation préalable est interdite et sera considérée comme une contrefaçon.</p>
-			<h2>Mentions Légales</h2>
-			<p>Éditeur : AltruistMinute</p>
-			<p>Hébergeur : Github, 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States</p>
-      <p>Copyright © AltruistMinute 2023 - Tous droits réservés</p>
-  </div>
-
   <script>
       function toggleLegalContent() {
           var legalContent = document.querySelector('.legal-content');
@@ -631,22 +572,18 @@ function submitForm() {
       }
   </script>
   </div>
-  <div class="sign-up">
-    <form action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
-  	<h2>Service Client</h2>
-  	<table style="margin:auto;" class="user-signup">
-  		<tr><th>Email:</th><td><input type="email" id="email" name="email" required/></td></tr>
-      <tr><th>Motif:</th><td><textarea id="message" name="message" style="height: 100px;" required></textarea></td></tr>
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://tinyurl.com/y3wka9c6">
-      <input type="hidden" name="_subject" value="New Comer Altruist">
-  		<tr><td colspan="2"><button class="signup" type="submit">Envoyer</button></td></tr>
-  	</table>
-  	</form>
-	</div>
 	<div id="footerBackground"></div>
-	<div id="footer">LeakGPT.pdf <button class="download" onclick="location.href='https://buy.stripe.com/eVaeWj0EgcZE6pq013'">Acheter</button></div>
+  <div id="footer">
+    <form action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
+      <table style="margin:auto;" class="user-signup">
+        <tr><td><input type="email" id="email" name="email" placeholder="Email"required/></td><td colspan="2"><button class="signup" type="submit">Recevoir</button></td></tr>
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="http://tinyurl.com/w7amdb86">
+        <input type="hidden" name="_subject" value="New Comer LeakGPT">
+      </table>
+    </form>
+  </div>
 <script>
 com.goalkicker.headerFooterGlassEffect.load();
 
