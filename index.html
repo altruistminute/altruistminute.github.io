@@ -1,270 +1,88 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Intelligence Artificielle &ndash; AltruistMinute.com</title>
-<meta name="viewport" content="width=device-width">
-<meta charset="UTF-8">
-<link rel="shortcut icon" type="image/png" href="/favicon.png">
-<link rel="canonical" href="https://altruistminute.com/">
-<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-<meta name="description" content="Intelligence artificelle, Outils IA comme Midjourney, Leonardo AI, Stable Diffusion, DALL-E, ChatGPT, Adobe Firefly, Llama 2, Google Bard, Bing AI Chat, Prompt Enginnering, et plus de générateur d'images et modèles de langage" />
-<meta name="keywords" content="Guide IA,Intelligence artificielle ,AltruistMinute AI,AI Tutoriels IA,Midjourney,Leonardo AI,Stable Diffusion,DALL-E,ChatGPT,Adobe Firefly,Llama 2,Google Bard,Bing AI Chat,Prompt Enginnering,LLMs,Generateur d'images" />
-<meta property="og:title" content="Guides IA, Midjourney, Leonardo AI, Stable Diffusion, ChatGPT..." />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="/favicon.png" />
-<meta property="og:url" content="https://altruistminute.com/" />
-<style>
-.grow {
-	transition: all .3s ease-in-out;
-	transform: scale(0.9);
-}
-
-.grow:hover, .grow:focus {
-	transform: scale(1);
-}
-
-.books {
-	margin: auto;
-	padding-bottom:50px;
-	padding-top: 20px;
-}
-
-.bookContainer img {
-	box-shadow: 0px 0px 18px 0px #666666;
-	margin-bottom:5px;
-}
-
-body, html {
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
-}
-
-body {
-	text-align:center;
-	font-family: 'Quicksand', sans-serif;
-	background-color: #1f1f1f;
-	color: White;
-}
-
-h1, h2 {
-	margin: 0px;
-  background: -webkit-linear-gradient(#DD5E89, #F7BB97);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#page {
-	margin: auto;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 40px;
-	background-color: #121212;
-	max-width: 1100px;
-}
-
-.bookContainer {
-	display: inline-block;
-}
-
-@media screen and (max-width: 800px) {
-	#footer {
-		height: 80px;
-	}
-
-	#footerBackground {
-		height: 80px;
-	}
-
-	.grow {
-		transform: scale(0.9);
-	}
-}
-
-.latest-news {
-	width: 400px;
-	margin: auto;
-	text-align: left;
-}
-
-.latest-news p {
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-}
-
-button.signup {
-	background-color: #3498db;
-	text-decoration:underline;
-	color: #ffffff;
-	border-radius:10px;
-	width: 200px;
-	height: 60px;
-	border: 0px;
-	cursor: pointer;
-	transform: scale(0.9);
-	transition: all .1s ease-in-out;
-	font-size: 18px;
-	font-weight: bold;
-}
-
-
-button:hover {
-	transform: scale(1);
-}
-
-.user-signup input,
-.user-signup textarea {
-    width: 250px;
-    border: 1px solid #3498db;
-    border-radius: 10px;
-    padding: 10px;
-		background-color: #3b3b3b;
-}
-
-.user-signup th {
-	text-align: right;
-}
-</style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111565129-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-111565129-1');
-</script>
-<style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 10px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#3498db !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 10px 7px 10px !important;font-size: 20px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Arial', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style>
-<script src="https://platform-api.sharethis.com/js/sharethis.js#property=5e8a6464e4eaeb0019f2d511&product=inline-share-buttons" async="async"></script>
-</head>
-<body>
-<div id="page">
-	<h1>Intelligence Artificielle - AltruistMinute</h1>
-	<div class="books">
-		<div class="bookContainer grow"><a href="ImagePro" target="_blank"><img src="images/imagepro.png" alt="Image Pro" width="350" height="495" /></a><br />Image Pro <span style="color:green">{Guide Offert}<span></div>
-		<form action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
-		<table style="margin:auto;" class="user-signup">
-			<tr><th>Email:</th><td><input type="email" id="email" name="email" required/></td></tr>
-			<input type="hidden" name="_template" value="table">
-			<input type="hidden" name="_captcha" value="false">
-			<input type="hidden" name="_next" value="http://tinyurl.com/nhf7e83h">
-			<input type="hidden" name="_subject" value="New Comer Main">
-			<tr><td colspan="2"><button class="signup" type="submit" onclick="afficherMessage()">Recevoir</button></td></tr>
-		</table>
-		</form>
-		<div class="bookContainer grow"><a href="LeakGPT" target="_blank"><img src="images/leakgpt.png" alt="LeakGPT" width="350" height="495" /></a><br />LeakGPT <span style="color:green">{New}<span></div>
-		<div class="bookContainer grow"><a href="BizGPT" target="_blank"><img src="images/bizgpt.png" alt="BizGPT" width="350" height="495" /></a><br />BizGPT <span style="color:green">{Bestseller}<span></div>
-	<div>
-	<div class="latest-news">
-		<h2 >A Propos</h2>
-	  <p>L'intelligence artificielle, la technologie et le business en ligne sont les domaines d'expertise de <strong>AltruistMinute</strong>. Notre but ? Vous aider à faire travailler l'IA à votre place comme elle le fait déjà pour nous. Nous partageons ici les outils que nous avons développés et que nous utilisons au quotidien, nos méthodes, nos astuces et secrets.</p>
-		<p><br></p>
-		<h2>SAAS</h2>
-		<a href="https://www.altruistminute.com/Test-API-Mistral" style="color:#007bff;"/>Tester l'API Mistral</a>
-		<p><br></p>
-		<h2>Newsletter</h2>
-		<p>Recevoir regulièrement nos Analyses IA et les potentiels Opportunités du marché via notre Newsletter <strong>Elite IA</strong>.</p>
-		<form action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
-		<table  class="user-signup">
-			<tr><th>Email:</th><td><input type="email" id="email" name="email" required/></td></tr>
-			<input type="hidden" name="_template" value="table">
-			<input type="hidden" name="_captcha" value="false">
-			<input type="hidden" name="_next" value="https://www.altruistminute.com/Merci">
-			<input type="hidden" name="_subject" value="New Comer Newsletter">
-			<tr><td colspan="2"><button class="signup" type="submit" onclick="afficherMessage()">S'inscrire</button></td></tr>
-		</table>
-		</form>
-		<style>
-      #legal {
-          text-decoration: underline;
-          cursor: pointer;
-          color: #007bff; /* Changement de couleur pour indiquer qu'il est cliquable */
-      }
-
-      .legal-content {
-          display: none;
-          background-color: #121212;
-          padding: 20px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          margin-top: 10px;
-      }
-
-			#message-container {
-					margin-top: 10px;
-					font-weight: bold;
-					color: green;
-			}
-
-      .legal-content h2 {
-          font-size: 14px;
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dernières News IA</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f9f9f9;
           color: #333;
-          margin-top: 15px;
-      }
+        }
 
-      .legal-content p {
-          font-size: 12px;
-          color: #666;
-      }
-  </style>
+        .container {
+          max-width: 800px;
+          margin: 50px auto;
+          padding: 20px;
+        }
 
-	<h4><a href="https://www.youtube.com/@altruistminute" style="color:#007bff;"/>Youtube</a></h4>
-	<h4><a href="http://tinyurl.com/4vhc6s5a" style="color:#007bff;"/>Telegram</a></h4>
-  <h4 id="legal" onclick="toggleLegalContent()">Légal et Garantie</h4>
-  <div class="legal-content">
-      <h2>Satisfaction Garantie</h2>
-      <p>Chez AltruistMinute, nous nous engageons à offrir une expérience exceptionnelle à nos clients. Nous croyons en la qualité de nos produits et services liés à l'Intelligence Artificielle (IA), et nous sommes fiers de les mettre à votre disposition. Si, pour une raison quelconque, vous n'êtes pas entièrement satisfait de votre achat, nous ferons tout en notre pouvoir pour résoudre vos préoccupations. Nous offrons une garantie de satisfaction client à 100 %.</p>
+        h1 {
+          text-align: center;
+          color: #007bff;
+        }
 
-      <h2>Garantie Légale</h2>
-      <p>AltruistMinute respecte toutes les lois et réglementations applicables en matière de commerce électronique et de protection du consommateur. Nos produits et services sont conformes aux normes légales en vigueur, et nous travaillons constamment à maintenir notre entreprise en pleine conformité avec les réglementations.</p>
+        .news-item {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          margin-bottom: 30px;
+          padding: 20px;
+          cursor: pointer;
+          transition: transform 0.2s;
+        }
 
-      <h2>Confidentialité et Sécurité des Données</h2>
-      <p>Nous comprenons l'importance de la confidentialité de vos données. AltruistMinute s'engage à protéger vos informations personnelles et à les utiliser uniquement dans le but de vous fournir les produits et services que vous avez achetés.</p>
+        .news-item:hover {
+          transform: scale(1.03);
+        }
 
-      <h2>Assistance Client</h2>
-      <p>Notre équipe d'assistance est à votre disposition pour répondre à toutes vos questions et vous aider en cas de besoin. Si vous avez des préoccupations concernant votre achat, des questions sur nos produits ou des demandes spécifiques, n'hésitez pas à nous contacter. Nous sommes là pour vous aider.</p>
+        .news-item h2 {
+          color: #007bff;
+        }
 
-			<h2>Propriété Intellectuelle</h2>
-			<p>Tous les éléments du site altruistminute.com, qu’il s’agisse de textes, d’images, de graphismes ou de logos, sont protégés par les droits de propriété intellectuelle. Toute reproduction ou utilisation sans autorisation préalable est interdite et sera considérée comme une contrefaçon.</p>
-			<h2>Mentions Légales</h2>
-			<p>Éditeur : AltruistMinute</p>
-			<p>Hébergeur : Github, 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States</p>
-      <p>Copyright © AltruistMinute 2023 - Tous droits réservés</p>
-  </div>
+        .news-item p {
+          margin-bottom: 10px;
+        }
 
-  <script>
-      function toggleLegalContent() {
-          var legalContent = document.querySelector('.legal-content');
-          if (legalContent.style.display === 'none' || legalContent.style.display === '') {
-              legalContent.style.display = 'block';
-          } else {
-              legalContent.style.display = 'none';
-          }
-      }
-  </script>
+        .subscribe {
+          text-align: center;
+          margin-top: 50px;
+        }
 
-	<script>
-	    function afficherMessage() {
-	        var messageContainer = document.getElementById("message-container");
-	        messageContainer.textContent = "succès !";
-	    }
-	</script>
-	<p><br></p>
-	</div>
-	<form action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
-	<h2>Contact</h2>
-	<table style="margin:auto;" class="user-signup">
-  	<tr><th>Email:</th><td><input type="email" id="email" name="email" required/></td></tr>
-		<tr><th>Motif:</th><td><textarea id="message" name="message" style="height: 100px;" required></textarea></td></tr>
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://t.me/+YzfFKS9lerVmZjQ8">
-    <input type="hidden" name="_subject" value="New Comer Message">
-		<tr><td colspan="2"><button class="signup" type="submit">Envoyer</button></td></tr>
-	</table>
-	</form>
-	</div>
-	</div>
-</div>
-</body>
-</html>
+        .subscribe button {
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+
+        .subscribe button:hover {
+          background-color: #0056b3;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Dernières News IA</h1>
+        
+        <div class="news-item" onclick="window.location.href='https://www.francetvinfo.fr/internet/intelligence-artificielle/intelligence-artificielle-sam-altman-reintegre-le-conseil-d-administration-d-openai_6413401.html';">
+          <h2>
+  
+  Intelligence artificielle : Sam Altman réintègre le conseil d'administration d'OpenAI
+</h2>
+          <p>Sam Altman, cofondateur d'OpenAI, a réintégré le conseil d'administration de l'entreprise, plus de quatre mois après avoir été licencié et réembauché en l'espace de quelques jours, a annoncé la société vendredi 8 mars. "Nous avons conclu à l'unanimité que Sam (Altman) et Greg (Brockman) étaient de bons dirigeants pour OpenAI", a déclaré Bret Taylor, président du conseil d'administration d'OpenAI, dans un communiqué. OpenAI, qui a créé le programme leader d'intelligence artificielle générative ChatGPT, a aussi annoncé l'arrivée de trois nouveaux membres : Sue Desmond-Hellmann, ancienne PDG de la Fondation Bill et Melinda Gates, Nicole Seligman, une ancienne présidente de Sony et Fidji Simo, la dirigeante d'Instacart.</p>
+        </div>
+        
+        <div class="subscribe">
+          <button onclick="window.location.href='https://buildavecchatgpt.github.io/';">S'abonner pour rester informé</button>
+        </div>
+      </div>
+    </body>
+    </html>
+    
