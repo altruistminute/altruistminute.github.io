@@ -1,256 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Intelligence Artificielle &ndash; AltruistMinute.com</title>
+<meta name="viewport" content="width=device-width">
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/png" href="/favicon.png">
+<link rel="canonical" href="https://altruistminute.com/">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<meta name="description" content="Intelligence artificelle, Outils IA comme Midjourney, Leonardo AI, Stable Diffusion, DALL-E, ChatGPT, Adobe Firefly, Llama 2, Google Bard, Bing AI Chat, Prompt Enginnering, et plus de générateur d'images et modèles de langage" />
+<meta name="keywords" content="Guide IA,Intelligence artificielle ,AltruistMinute AI,AI Tutoriels IA,Midjourney,Leonardo AI,Stable Diffusion,DALL-E,ChatGPT,Adobe Firefly,Llama 2,Google Bard,Bing AI Chat,Prompt Enginnering,LLMs,Generateur d'images" />
+<meta property="og:title" content="Guides IA, Midjourney, Leonardo AI, Stable Diffusion, ChatGPT..." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/favicon.png" />
+<meta property="og:url" content="https://altruistminute.com/" />
+<style>
+.grow {
+	transition: all .3s ease-in-out;
+	transform: scale(0.9);
+}
 
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="viewport" content="width=device-width">
-      <meta charset="UTF-8">
-      <link rel="shortcut icon" type="image/png" href="/favicon.png">
-      <link rel="canonical" href="https://altruistminute.com/">
-      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-      <meta name="description" content="Intelligence artificielle, Outils IA comme Midjourney, Leonardo AI, Stable Diffusion, DALL-E, ChatGPT, Adobe Firefly, Llama 2, Google Bard, Bing AI Chat, Prompt Enginnering, et plus de générateur d'images et modèles de langage" />
-      <meta name="keywords" content="Guide IA,Intelligence artificielle ,AltruistMinute AI,AI Tutoriels IA,Midjourney,Leonardo AI,Stable Diffusion,DALL-E,ChatGPT,Adobe Firefly,Llama 2,Google Bard,Bing AI Chat,Prompt Enginnering,LLMs,Generateur d'images" />
-      <meta property="og:title" content="Guides IA, Midjourney, Leonardo AI, Stable Diffusion, ChatGPT..." />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content="/favicon.png" />
-      <meta property="og:url" content="https://altruistminute.com/" />
-      <title>Intelligence Artificielle - Actualité</title>
-      <style>
-        body {
-          font-family: 'Arial', sans-serif;
-          margin: 0;
-          padding: 0;
-          background-color: #1a1a1a;
-          color: #ccc;
-        }
+.grow:hover, .grow:focus {
+	transform: scale(1);
+}
 
-        .container {
-          max-width: 800px;
-          margin: 50px auto;
-          padding: 20px;
-        }
+.books {
+	margin: auto;
+	padding-bottom:50px;
+	padding-top: 20px;
+}
 
-        h1 {
-          text-align: center;
-          color: #4d94ff;
-        }
+.bookContainer img {
+	box-shadow: 0px 0px 18px 0px #666666;
+	margin-bottom:5px;
+}
 
-        .news-item {
-          background-color: #333;
-          border-radius: 8px;
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-          margin-bottom: 30px;
-          padding: 20px;
+body, html {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+body {
+	text-align:center;
+	font-family: 'Quicksand', sans-serif;
+	background-color: #1f1f1f;
+	color: White;
+}
+
+h1, h2 {
+	margin: 0px;
+  background: -webkit-linear-gradient(#DD5E89, #F7BB97);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#page {
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	background-color: #121212;
+	max-width: 1100px;
+}
+
+.bookContainer {
+	display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+	#footer {
+		height: 80px;
+	}
+
+	#footerBackground {
+		height: 80px;
+	}
+
+	.grow {
+		transform: scale(0.9);
+	}
+}
+
+.latest-news {
+	width: 400px;
+	margin: auto;
+	text-align: left;
+}
+
+.latest-news p {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+button.signup {
+	background-color: #3498db;
+	text-decoration:underline;
+	color: #ffffff;
+	border-radius:10px;
+	width: 200px;
+	height: 60px;
+	border: 0px;
+	cursor: pointer;
+	transform: scale(0.9);
+	transition: all .1s ease-in-out;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+button:hover {
+	transform: scale(1);
+}
+
+.user-signup input,
+.user-signup textarea {
+    width: 250px;
+    border: 1px solid #3498db;
+    border-radius: 10px;
+    padding: 10px;
+		background-color: #3b3b3b;
+}
+
+.user-signup th {
+	text-align: right;
+}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111565129-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-111565129-1');
+</script>
+<style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 10px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#3498db !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 10px 7px 10px !important;font-size: 20px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Arial', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style>
+<script src="https://platform-api.sharethis.com/js/sharethis.js#property=5e8a6464e4eaeb0019f2d511&product=inline-share-buttons" async="async"></script>
+</head>
+<body>
+<div id="page">
+	<h1>Intelligence Artificielle - AltruistMinute</h1>
+	<div class="books">
+		<div class="bookContainer grow"><a href="ImagePro" target="_blank"><img src="images/imagepro.png" alt="Pro Prompt" width="350" height="495" /></a><br />Pro Prompt</div>
+		<table style="margin:auto;" class="user-signup">
+			<tr><td colspan="2"><button class="signup" type="submit" onclick="location.href='https://buy.stripe.com/7sIaG35YAe3I6pqcNO'">Obtenir</button></td></tr>
+		</table>
+	<div>
+	<div class="latest-news">
+		<style>
+      #legal {
+          text-decoration: underline;
           cursor: pointer;
-          transition: transform 0.2s;
-        }
+          color: #007bff; /* Changement de couleur pour indiquer qu'il est cliquable */
+      }
 
-        .news-item:hover {
-          transform: scale(1.03);
-        }
-
-        .news-item h2 {
-          color: #4d94ff;
-        }
-
-        .news-item p {
-          margin-bottom: 10px;
-        }
-
-        .subscribe {
-          text-align: center;
-          margin-top: 50px;
-          position: fixed;
-          bottom: 0;
-          width: 100%;
-          background-color: #333;
+      .legal-content {
+          display: none;
+          background-color: #121212;
           padding: 20px;
-          box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .subscribe button {
-          padding: 10px 20px;
-          background-color: #4d94ff;
-          color: #fff;
-          border: none;
+          border: 1px solid #ccc;
           border-radius: 5px;
-          font-size: 16px;
-          cursor: pointer;
-        }
-
-        .subscribe button:hover {
-          background-color: #1a66ff;
-        }
-
-        .generated-date {
-          text-align: right;
-          font-style: italic;
-          font-size: 12px;
           margin-top: 10px;
-        }
+      }
 
-        .header {
-          background-color: #333;
-          padding: 10px;
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-          position: fixed;
-          top: 0;
-          width: 100%;
-        }
+			#message-container {
+					margin-top: 10px;
+					font-weight: bold;
+					color: green;
+			}
 
-        .header h1 {
-          margin: 0;
-          color: #4d94ff;
-        }
-      </style>
+      .legal-content h2 {
+          font-size: 14px;
+          color: #333;
+          margin-top: 15px;
+      }
 
-    </head>
-    <body>
-      <div class="header">
-        <h1>Dernières News IA</h1>
-      </div>
-      <div class="container">
-        <div class="generated-date">
-          Dernière mise à jour le 22 March 2024 à 00:28:55
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.francetvinfo.fr/internet/intelligence-artificielle/l-assemblee-generale-de-l-onu-appelle-a-reguler-l-intelligence-artificielle-et-ses-risques_6438550.html';">
-          <h2>
-  
-  L'Assemblée générale de l'ONU appelle à réguler l'intelligence artificielle
-</h2>
-          <p>C'est une innovation qui suscite enthousiasme et inquiétudes. Face à l'explosion de l'intelligence artificielle (IA), l'Assemblée générale de l'ONU a appelé à la mise en place de "normes" internationales, adoptant, jeudi 21 mars, sa première résolution sur cette question de société sensible. "Aujourd'hui, nous sommes à un point d'inflexion.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.jeuxvideo.com/news/1867554/c-est-le-grand-bond-en-avant-pour-les-futures-cartes-graphiques-nvidia-rtx-50-qui-s-annoncent-folles-en-reprenant-l-architecture-des-dernieres-puces-dediees-a-l-ia.htm';">
-          <h2>C’est le grand bond en avant pour les futures cartes graphiques NVIDIA RTX 50 qui s’annoncent folles en reprenant l’architecture des dernières puces dédiées à l’IA</h2>
-          <p>Nvidia a récemment levé le voile sur ses GPU Blackwell destinés à l'intelligence artificielle. Les regards se tournent désormais vers ses cartes graphiques destinées au grand public, qui, selon les rumeurs, utiliseraient le même processus de fabrication TSMC 4NP pour la future gamme GeForce RTX 50. Lors de la conférence GTC 2024, Jensen Huang, PDG de Nvidia, a présenté la nouvelle architecture GPU de la société : Blackwell.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.numerama.com/tech/1654490-elon-musk-publie-un-torrent-de-318-go-et-rend-grok-open-source.html';">
-          <h2>
-                    Elon Musk publie un torrent de 318 Go et rend Grok open source                </h2>
-          <p>Le même coup que Mistral                         GPT-4, Gemini Pro, Llama 2 et Mistral Large connaissent désormais le nom de leur rival : Grok-1. Depuis le 18 mars, les équipes d’Elon Musk proposent au téléchargement un gigantesque dossier de 318,24 Go, accessible sous la forme d’un fichier torrent (en bio sur son compte Twitter). Il contient un modèle de langage avec 314 milliards de paramètres, développé par l’entreprise xAI.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://kulturegeek.fr/news-306771/figure-01-robot-humanoide-dopenai-montre-etonnamment-veloce-precis-video';">
-          <h2>Figure 01, le robot humanoïde d’OpenAI, se montre étonnamment véloce et précis (vidéo)</h2>
-          <p>OpenAI a diffusé il y a quelques heures une nouvelle vidéo de son robot humanoïde Figure 01 (créé en partenariat avec la startup Figure), une vidéo qui a de faux airs de publicité futuriste destinée à pousser à l’achat d’une telle machine. Non seulement Figure 01 s’avère extrêmement véloce, rapide et précis dans ses mouvements, mais le robot est aussi capable de s’exécuter sur simple commande vocale en temps réel, et peut même répondre à son interlocuteur ! OpenAI a poussé le sens du détail jusqu’à reproduire les hésitations vocales propres au phrasé « humain », à l’instar de la phrase : « Alors, je vous ai donné la pomme, parce que c’est le seul, heu, élément comestible que je pouvais vous fournir sur la table. » Figure 01 place les ustensiles de cuisine dans le bac à vaisselle avec une telle facilité apparente que pour la première fois, il semble vraiment possible d’envisager qu’un robot de ce genre puisse remplacer l’humain pour les tâches domestiques quotidiennes.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://fr.news.yahoo.com/sport/nouvelle-intelligence-artificielle-google-capable-150236709.html';">
-          <h2>Titre non trouvé</h2>
-          <p></p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.futura-sciences.com/tech/actualites/technologie-gpt-4-turbo-maintenant-microsoft-copilot-cest-entierement-gratuit-112137/';">
-          <h2>GPT-4 Turbo est maintenant dans Microsoft Copilot et c’est entièrement gratuit ! </h2>
-          <p>Technologie Intelligence artificielle ChatGPT actualité • 2 Min C’est via un simple tweet que Microsoft a annoncé une mise à jour majeure de son chatbot Copilot. Désormais, la version gratuite est basée sur GPT-4 Turbo, le modèle d’intelligence artificielle le plus avancé d’OpenAI. au sommaire Cela fait quatre mois qu'OpenAI a lancé la dernière version de son chatbot ChatGPTChatGPT, basé sur GPT-4 Turbo.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.elysee.fr/emmanuel-macron/2024/03/13/25-recommandations-pour-lia-en-france';">
-          <h2>25 recommandations pour l'IA en France.</h2>
-          <p>21 mars 2024. Déclaration de l’Alliance européenne du nucléaire. 21 mars 2024.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.radiofrance.fr/franceinter/podcasts/l-info-de-france-inter/les-doc-france-inter-du-merc-13-mars-5-8485800';">
-          <h2>Faire de la France un pays "à la pointe" de l'IA : quinze experts remettent leur rapport à Emmanuel Macron</h2>
-          <p>Faire de la France un pays "à la pointe" de l'IA : quinze experts remettent leur rapport à Emmanuel Macron javascript désactivé Votre expérience sur le site radiofrance. fr risque d’être dégradée. Au terme d'un travail de six mois, la commission de l'intelligence artificielle, composée d'une quinzaine d'experts dont Yann LeCun, directeur du laboratoire d'intelligence artificielle de Meta, Joëlle Barral, directrice scientifique au sein de Google, ou encore Arthur Mensch, cofondateur de la start-up Mistral AI, championne française et européenne de l'IA et l'ancien secrétaire d'Etat au Numérique Cedric O,  ont présenté ce mercredi 25 recommandations pour que la France mène en Europe "une dynamique de maîtrise et de déploiement du plein potentiel de l'intelligence artificielle".</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.frandroid.com/culture-tech/intelligence-artificielle/1963714_chatgpt-non-censure-comment-activer-son-mode-cache?utm_content=Frandroid&utm_source=twitter&utm_medium=Social&utm_campaign=Nonli';">
-          <h2>
-ChatGPT non censuré : comment activer son mode caché ?
-</h2>
-          <p>ChatGPT s'autocensure pour se protéger et protéger ses utilisateurs. Cette bride imposée par OpenAI peut être levée avec un simple prompt. Afin d’éviter tout débordement, usage inadéquat de son service ou même protéger les utilisateurs contre eux-mêmes, OpenAI a bridé ChatGPT en fixant des garde-fous dans les réponses transmises.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.lexpress.fr/economie/high-tech/ia-comment-faire-de-tous-les-francais-des-virtuoses-dans-ce-domaine-SBSBUUZNK5ATHK4ZTCOKI5UD3U/';">
-          <h2>IA : comment faire de tous les Français des virtuoses dans ce domaine</h2>
-          <p>Emmanuel Macron, lors d'un évènement dédié à la French Tech, au palais de l'Elysée, en février 2023. Michel Euler / POOL / AFP C’est un petit groupe qui pourrait changer le destin de la France. Composé de 15 experts, le comité sur l’IA générative a rendu ce 13 mars un rapport très attendu sur ce que Paris doit mettre en place pour devenir un leader mondial de l’intelligence artificielle.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.francetvinfo.fr/internet/intelligence-artificielle/les-eurodeputes-adoptent-une-loi-encadrant-l-intelligence-artificielle-une-premiere_6421789.html';">
-          <h2>
-  
-  Les eurodéputés adoptent une loi encadrant l'intelligence artificielle pour la première fois dans le monde
-</h2>
-          <p>La législation est unique au niveau mondial. Les députés européens ont adopté, mercredi 13 mars, des règles pour encadrer les systèmes d'intelligence artificielle (IA) comme ChatGPT. Le commissaire européen chargé du dossier, Thierry Breton, s'est félicité sur le réseau social X du "soutien massif" du Parlement (523 voix pour, 46 voix contre) à ce texte qui établit les "premières règles contraignantes et complètes au monde pour une IA fiable".</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.bfmtv.com/tech/intelligence-artificielle/midjourney-accuse-son-rival-stability-ai-de-vol-et-l-interdit-d-acces_AV-202403120294.html';">
-          <h2>Midjourney accuse son rival Stability AI de vol et l'interdit d'accès</h2>
-          <p>Le comble pour un éditeur accusé de reprendre des œuvres sans payer de droits d'auteur. Midjourney a accusé mercredi dernier son rival Stability AI d'avoir infiltré sa base de données le samedi précédent afin d'exfiltrer des données - par exemple des images. Après une interruption de son service pendant 24 heures, Midjourney a interdit l'accès à ses services aux employés de Stable Diffusion, l'outil phare de Stability AI.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.altruistminute.com/fonctionnalite-personnages-recurents-midjourney.html';">
-          <h2>Midjourney teste actuellement sa fonctionnalité de "personnages récurrents"</h2>
-          <p>Le nouvel algorithme du service d'IA générative peut désormais utiliser le même personnage sur plusieurs images et styles sans s'éloigner trop de leur conception originale. Des instructions sur l'utilisation des "personnages récurrents" sont disponibles sur le canal Discord de Midjourney. Cette fonctionnalité n'est pas conçue pour reproduire des personnes réelles à partir de photographies et fonctionne mieux sur des personnages générés via Midjourney.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://investir.lesechos.fr/conseils-boursiers/conseils-actions/oui-oracle-explique-quelle-est-bien-une-ia-company-laction-senvole-a-wall-street-2082122';">
-          <h2>Oui, Oracle explique qu’elle est bien une « IA company », l’action s’envole à Wall Street Contenu réservé aux abonnés</h2>
-          <p>Contenu réservé aux abonnés L’action du groupe de centres de données bondit de plus de 10% à New York en réaction à une forte progression du chiffre d’affaires réalisé dans les infrastructures cloud, portées par la demande liée à l’IA générative. Pour la première fois, le cloud dépasse maintenant l’activité traditionnelle de licences. C’est exactement le message que les analystes voulaient entendre.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.bfmtv.com/tech/intelligence-artificielle/nvidia-a-son-tour-attaque-en-justice-pour-l-entrainement-de-son-ia_AV-202403110480.html';">
-          <h2>Nvidia à son tour attaqué en justice pour l’entraînement de son IA</h2>
-          <p>Après OpenAI, c’est Nvidia qui est dans le viseur des auteurs américains. Le géant des puces de l’intelligence artificielle (IA) est poursuivi en justice par trois écrivains, qui lui reprochent d’avoir entraîné son IA, NeMo, avec leurs œuvres sans leur autorisation, rapporte Reuters. Cette plateforme d’IA est présentée comme un moyen pour les entreprises d’adopter simplement et rapidement l’IA générative.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.sudouest.fr/sciences-et-technologie/intelligence-artificielle-des-centaines-de-sites-s-appuient-sur-elle-pour-generer-des-infos-parfois-sciemment-fausses-18916669.php';">
-          <h2>Intelligence artificielle : des centaines de sites s’appuient sur elle pour générer des infos, parfois sciemment fausses</h2>
-          <p>Toute l'actualité de votre région en continu sur notre application. La révolution de l’intelligence artificielle dite générative est employée par des centaines de sites internet pour créer des articles sans intervention humaine, avec parfois la volonté de véhiculer de fausses informations, s’alarment des chercheurs. De simples internautes, mais aussi des décideurs sont de plus en plus nombreux à se laisser abuser, de bonne foi ou non par des articles créés par l’intelligence artificielle générative, sans intervention humaine.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.clubic.com/actualite-521149-microsoft-copilot-bloque-certains-termes-dans-ses-prompts-qui-peuvent-generer-des-contenus-choquants.html';">
-          <h2>Microsoft Copilot bloque certains termes dans ses prompts qui peuvent générer des contenus choquants</h2>
-          <p>La dernière mise à jour de l'IA de Microsoft a entraîné le bannissement de certaines catégories de prompts, notamment ceux pouvant générer des contenus violents, choquants ou à caractère sexuel. Depuis que les outils d'intelligence artificielle sont entrés dans nos usages, il n'est pas rare que l'on constate que certains d'entre eux déraillent, pour ne pas dire inquiètent ses utilisateurs. C'est ainsi qu'après le craquage de ChatGPT, ou l'énorme controverse liée aux erreurs historiques de Gemini, c'est au tour de, Copilot l'assistant de Microsoft, de faire parler de lui.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://kulturegeek.fr/news-306492/elon-musk-promet-lia-grok-passer-open-source-semaine';">
-          <h2>Elon Musk promet que l’IA Grok va passer Open Source dès cette semaine</h2>
-          <p>Il en allait de la cohérence des propos d’Elon Musk sur OpenAI : l’entrepreneur star a déclaré il y a quelques heures de cela sur son compte X que le chatbot Grok développé par sa société d’IA xAI serait disponible en Open Source dès cette semaine ! Cette annonce choc intervient suite aux nombreuses critiques sur le double discours de Musk, qui d’un côté dénonce  la « dérive » commerciale d’OpenAI vis à vis de ChatGPT, et de l’autre propose une IA Grok adossée à un modèle strictement commercial (les abonnements premium à X, soit 16 dollars par mois). Elon Musk est tout de même allé jusqu’à porter plainte contre OpenAI dans cette affaire, et s’est peut-être dit que sa plainte aurait d’autant moins de chances d’être examinée par un juge que Grok se rémunère sur les abonnements, donnant ainsi l’impression qu’il s’agit avant tout d’écarter un concurrent sur le secteur de l’IA en passant par la voie judiciaire. Quelles que soient les motivations des uns et des autres, la poussée vers l’open source est évidemment une bonne chose : outre xAI, Meta s’était déjà engagé vers cette voie, tout comme le français Mistral (qui a récemment conclut un partenariat avec Microsoft).</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.bfmtv.com/tech/twitter/elon-musk-lance-son-reseau-social-x-sur-les-tv-pour-concurrencer-youtube_AV-202403110368.html';">
-          <h2>Elon Musk lance son réseau social X sur les TV pour concurrencer Youtube</h2>
-          <p>Après les ordinateurs et les smartphones, Twitter (désormais X) sera bientôt disponible sur les télévisons Elon Musk a annoncé le 9 mars qu’une application pour télévisions connectées sera lancée pour permettre de regarder de longues vidéos. Selon le magazine américain Fortune, elle sera disponible sur les TV d’Amazon et de Samsung dans le courant de la semaine. Avec cette dernière, le milliardaire vise à concurrencer Youtube, Elle serait d’ailleurs identique à Youtube TV développée par Google.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.actuia.com/actualite/femmes-et-ia-lintelligence-artificielle-reflete-les-biais-de-la-societe/';">
-          <h2>Femmes et IA : l’intelligence artificielle reflète les biais de la société</h2>
-          <p>À l’occasion de la Journée internationale des droits des femmes, la Délégation aux droits des femmes, la Délégation à la prospective et l’Office parlementaire d’évaluation des choix scientifiques et technologiques (OPECST) ont organisé hier un colloque intitulé “Femmes et IA : briser les codes”. Selon le Rapport de l’UNESCO sur la science de 2021, intitulé “Pour être intelligente, la révolution numérique devra être inclusive”, les femmes ne représentaient que 22 % des professionnels de l’IA en France et 33,3 % de la population dans les recherches scientifiques. Une forte sous-représentation (20%) dans les écoles d’ingénieurs et du numérique était également constatée, due principalement à des stéréotypes de genre amenant les jeunes filles à se tourner au lycée vers des études littéraires, paramédicales ou sociales.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.francetvinfo.fr/internet/intelligence-artificielle/intelligence-artificielle-sam-altman-reintegre-le-conseil-d-administration-d-openai_6413401.html';">
-          <h2>
-  
-  Intelligence artificielle : Sam Altman réintègre le conseil d'administration d'OpenAI
-</h2>
-          <p>Sam Altman, cofondateur d'OpenAI, a réintégré le conseil d'administration de l'entreprise, plus de quatre mois après avoir été licencié et réembauché en l'espace de quelques jours, a annoncé la société vendredi 8 mars. "Nous avons conclu à l'unanimité que Sam (Altman) et Greg (Brockman) étaient de bons dirigeants pour OpenAI", a déclaré Bret Taylor, président du conseil d'administration d'OpenAI, dans un communiqué. OpenAI, qui a créé le programme leader d'intelligence artificielle générative ChatGPT, a aussi annoncé l'arrivée de trois nouveaux membres : Sue Desmond-Hellmann, ancienne PDG de la Fondation Bill et Melinda Gates, Nicole Seligman, une ancienne présidente de Sony et Fidji Simo, la dirigeante d'Instacart.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.forbes.fr/business/pourquoi-elon-musk-attaque-openai/';">
-          <h2>Pourquoi Elon Musk attaque OpenAI ?</h2>
-          <p>Depuis novembre 2022 et le lancement de ChatGPT, l’intelligence artificielle est sur toutes les lèvres. ChatGPT a atteint un million d’utilisateurs en cinq jours – contre deux mois et demi pour Instagram, deux ans pour Twitter et trois ans et demi pour Netflix – et 100 millions en deux mois, quand TikTok en a mis neuf. OpenAI est devenu le leader incontournable d’une industrie encore émergente.</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.lefigaro.fr/secteur/high-tech/xavier-niel-la-valeur-qui-va-surgir-de-l-intelligence-artificielle-va-etre-colossale-20240309';">
-          <h2>Xavier Niel: «La valeur qui va surgir de l’intelligence artificielle va être colossale»</h2>
-          <p>Rubriques et services du Figaro Le Figaro Rubriques et services du Figaro Nos journaux et magazines Les sites du Groupe Figaro ENTRETIEN - Le fondateur de Free et propriétaire d’Iliad a également créé Station F, plus grand incubateur de start-up en Europe. Il vient de lancer Kyutai, premier laboratoire de recherche ouverte européen dédié à l’intelligence artificielle avec l’ambition de rassembler les meilleurs cerveaux. Cet article est issu du Figaro Magazine Qu’est-ce que le génie? Le Larousse le définit comme une aptitude naturelle de l’esprit de quelqu’un qui le rend capable de concevoir, de créer des choses, des concepts d’une qualité exceptionnelle».</p>
-        </div>
-        
-        <div class="news-item" onclick="window.location.href='https://www.usine-digitale.fr/article/intelligence-artificielle-un-ingenieur-de-google-a-vole-des-secrets-industriels-pour-les-revendre-en-chine.N2209627';">
-          <h2>Intelligence artificielle : un ingénieur a volé des secrets industriels de Google pour les revendre en Chine</h2>
-          <p>Un ingénieur ayant travaillé pour Google aux États-Unis a été arrêté et inculpé par un grand jury fédéral américain pour “tentative de vol industriel”. Il aurait volé au géant du web plus de 500 fichiers confidentiels, qui concerneraient ses puces spécialisées TPU et ses datacenters utilisés pour le traitement de l’IA. Le ressortissant chinois risque jusqu’à dix ans de prison et 250 000 dollars d’amende pour chacun des quatre chefs d’accusation qui le visent.</p>
-        </div>
-        
-      </div>
-      <div class="subscribe">
-        <button onclick="window.location.href='https://buildavecchatgpt.github.io/';">S'abonner pour rester informé</button>
-      </div>
-    </body>
-    </html>
-    
+      .legal-content p {
+          font-size: 12px;
+          color: #666;
+      }
+  </style>
+
+  <h4 id="legal" style="text-align: center;" onclick="toggleLegalContent()">Infos</h4>
+  <div class="legal-content">
+			<h2>Mentions Légales</h2>
+			<p>Éditeur : AltruistMinute</p>
+			<p>Hébergeur : Github, 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States</p>
+      <p>Copyright © AltruistMinute 2023 - Tous droits réservés</p>
+      <h2><a href="https://www.youtube.com/@altruistminute" style="color:#007bff;"/>Youtube</a></h2>
+  </div>
+
+  <script>
+      function toggleLegalContent() {
+          var legalContent = document.querySelector('.legal-content');
+          if (legalContent.style.display === 'none' || legalContent.style.display === '') {
+              legalContent.style.display = 'block';
+          } else {
+              legalContent.style.display = 'none';
+          }
+      }
+  </script>
+
+	<script>
+	    function afficherMessage() {
+	        var messageContainer = document.getElementById("message-container");
+	        messageContainer.textContent = "succès !";
+	    }
+	</script>
+	<p><br></p>
+	</div>
+	<form action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
+	<h2>Contact</h2>
+	<table style="margin:auto;" class="user-signup">
+  	<tr><th>Email:</th><td><input type="email" id="email" name="email" required/></td></tr>
+		<tr><th>Motif:</th><td><textarea id="message" name="message" style="height: 100px;" required></textarea></td></tr>
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://t.me/+YzfFKS9lerVmZjQ8">
+    <input type="hidden" name="_subject" value="New Comer Message">
+		<tr><td colspan="2"><button class="signup" type="submit">Envoyer</button></td></tr>
+	</table>
+	</form>
+	</div>
+	</div>
+</div>
+</body>
+</html>
