@@ -1,232 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-<title>Intelligence Artificielle &ndash; AltruistMinute.com</title>
-<meta name="viewport" content="width=device-width">
-<meta charset="UTF-8">
-<link rel="shortcut icon" type="image/png" href="/favicon.png">
-<link rel="canonical" href="https://altruistminute.com/">
-<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-<meta name="description" content="Intelligence artificelle, Outils IA comme Midjourney, Leonardo AI, Stable Diffusion, DALL-E, ChatGPT, Adobe Firefly, Llama 2, Google Bard, Bing AI Chat, Prompt Enginnering, et plus de générateur d'images et modèles de langage" />
-<meta name="keywords" content="Guide IA,Intelligence artificielle ,AltruistMinute AI,AI Tutoriels IA,Midjourney,Leonardo AI,Stable Diffusion,DALL-E,ChatGPT,Adobe Firefly,Llama 2,Google Bard,Bing AI Chat,Prompt Enginnering,LLMs,Generateur d'images" />
-<meta property="og:title" content="Guides IA, Midjourney, Leonardo AI, Stable Diffusion, ChatGPT..." />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="/favicon.png" />
-<meta property="og:url" content="https://altruistminute.com/" />
-<style>
-.grow {
-	transition: all .3s ease-in-out;
-	transform: scale(0.9);
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:image" content="/favicon.png" />
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
+		<link rel="canonical" href="https://altruistminute.com/">
+		<meta property="og:url" content="https://altruistminute.com/" />
+    <title>Intelligence Artificielle – AltruistMinute.com</title>
+    <meta name="description" content="Découvrez les dernières avancées en Intelligence Artificielle avec AltruistMinute. Guides, tutoriels et analyses sur Midjourney, ChatGPT, et plus encore.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
 
-.grow:hover, .grow:focus {
-	transform: scale(1);
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.books {
-	margin: auto;
-	padding-bottom:50px;
-	padding-top: 20px;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
 
-.bookContainer img {
-	box-shadow: 0px 0px 18px 0px #666666;
-	margin-bottom:5px;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-body, html {
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
-}
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+        }
 
-body {
-	text-align:center;
-	font-family: 'Quicksand', sans-serif;
-	background-color: #1f1f1f;
-	color: White;
-}
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
 
-h1, h2 {
-	margin: 0px;
-  background: -webkit-linear-gradient(#DD5E89, #F7BB97);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
 
-#page {
-	margin: auto;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 40px;
-	background-color: #121212;
-	max-width: 1100px;
-}
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+						margin-top: 20px;
+        }
 
-.bookContainer {
-	display: inline-block;
-}
+        .cta-button:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
 
-@media screen and (max-width: 800px) {
-	#footer {
-		height: 80px;
-	}
+        .features {
+            padding: 4rem 0;
+            background-color: white;
+        }
 
-	#footerBackground {
-		height: 80px;
-	}
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
 
-	.grow {
-		transform: scale(0.9);
-	}
-}
+        .feature {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--bg-color);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
 
-.latest-news {
-	width: 400px;
-	margin: auto;
-	text-align: left;
-}
+        .feature:hover {
+            transform: translateY(-5px);
+        }
 
-.latest-news p {
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-}
+        .newsletter {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
 
-button.signup {
-	background-color: #3498db;
-	text-decoration:underline;
-	color: #ffffff;
-	border-radius:10px;
-	width: 200px;
-	height: 60px;
-	border: 0px;
-	cursor: pointer;
-	transform: scale(0.9);
-	transition: all .1s ease-in-out;
-	font-size: 18px;
-	font-weight: bold;
-}
+        form {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
 
+        input[type="email"] {
+            padding: 0.8rem;
+            width: 300px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
 
-button:hover {
-	transform: scale(1);
-}
+        button[type="submit"] {
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-.user-signup input,
-.user-signup textarea {
-    width: 250px;
-    border: 1px solid #3498db;
-    border-radius: 10px;
-    padding: 10px;
-		background-color: #3b3b3b;
-}
+        button[type="submit"]:hover {
+            background-color: #2980b9;
+        }
 
-.user-signup th {
-	text-align: right;
-}
-</style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111565129-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-111565129-1');
-</script>
-<style>.bmc-button img{height: 34px !important;width: 35px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{padding: 7px 10px 7px 10px !important;line-height: 35px !important;height:51px !important;min-width:217px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#3498db !important;border-radius: 5px !important;border: 1px solid transparent !important;padding: 7px 10px 7px 10px !important;font-size: 20px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Arial', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style>
-<script src="https://platform-api.sharethis.com/js/sharethis.js#property=5e8a6464e4eaeb0019f2d511&product=inline-share-buttons" async="async"></script>
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
 </head>
 <body>
-<div id="page">
-	<h1>Intelligence Artificielle - AltruistMinute</h1>
-	<div class="books">
-		<div class="bookContainer grow"><a href="https://buy.stripe.com/8wM4hF0EggbQ3de015" target="_blank"><img src="images/imagepro.png" alt="Pro Prompt" width="350" height="495" /></a><br />Pro Prompt (.pdf)</div>
-		<table style="margin:auto;" class="user-signup">
-			<tr><td colspan="2"><button class="signup" type="submit" onclick="location.href='https://buy.stripe.com/8wM4hF0EggbQ3de015'">Recevoir le guide</button></td></tr>
-		</table>
-	<div>
+    <header>
+        <div class="container">
+            <nav>
+                <h2>AltruistMinute</h2>
+            </nav>
+        </div>
+    </header>
 
-	<div class="latest-news">
-		<style>
-      #legal {
-          text-decoration: underline;
-          cursor: pointer;
-          color: #007bff; /* Changement de couleur pour indiquer qu'il est cliquable */
-      }
+    <section class="hero">
+        <div class="container">
+            <h1>Découvrez le Futur de l'Intelligence Artificielle</h1>
+            <p>Explorez les dernières avancées en IA avec nos guides et analyses experts</p>
+            <a href="#newsletter" class="cta-button">Commencez maintenant</a>
+        </div>
+    </section>
 
-      .legal-content {
-          display: none;
-          background-color: #121212;
-          padding: 20px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          margin-top: 10px;
-      }
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Guides IA</h3>
+                    <p>Tutoriels détaillés sur les outils IA les plus populaires</p>
+                </div>
+                <div class="feature">
+                    <h3>Analyses d'experts</h3>
+                    <p>Insights approfondis sur les dernières tendances en IA</p>
+                </div>
+                <div class="feature">
+                    <h3>Communauté active</h3>
+                    <p>Rejoignez des passionnés d'IA du monde entier</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			#message-container {
-					margin-top: 10px;
-					font-weight: bold;
-					color: green;
-			}
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <h2>Restez informé avec notre newsletter</h2>
+            <p>Recevez nos dernières analyses et guides directement dans votre boîte mail</p>
+            <form action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
+                <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+                <button type="submit">S'abonner</button>
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://www.altruistminute.com/Merci">
+                <input type="hidden" name="_subject" value="Nouvel abonné Newsletter">
+            </form>
+        </div>
+    </section>
 
-      .legal-content h2 {
-          font-size: 14px;
-          color: #333;
-          margin-top: 15px;
-      }
-
-      .legal-content p {
-          font-size: 12px;
-          color: #666;
-      }
-  </style>
-
-  <h4 id="legal" style="text-align: center;" onclick="toggleLegalContent()">FAQ</h4>
-  <div class="legal-content">
-      <h2>Modalité</h2>
-      <p>Le produit se téléchargera automatiquement après votre paiement.</p>
-      <h2>Politique</h2>
-      <p>Satisfait ou remboursé dans les 24h pour raisons valables.</p>
-			<h2>Mentions Légales</h2>
-			<p>Éditeur : AltruistMinute</p>
-			<p>Hébergeur : Github, 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States</p>
-      <p>Copyright © AltruistMinute 2024 - Tous droits réservés</p>
-      <h2><a href="https://www.youtube.com/@altruistminute" style="color:#007bff;"/>Youtube</a></h2>
-  </div>
-
-  <script>
-      function toggleLegalContent() {
-          var legalContent = document.querySelector('.legal-content');
-          if (legalContent.style.display === 'none' || legalContent.style.display === '') {
-              legalContent.style.display = 'block';
-          } else {
-              legalContent.style.display = 'none';
-          }
-      }
-  </script>
-
-	<script>
-	    function afficherMessage() {
-	        var messageContainer = document.getElementById("message-container");
-	        messageContainer.textContent = "succès !";
-	    }
-	</script>
-	<p><br></p>
-	</div>
-	<form action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
-	<h2>Contact</h2>
-	<table style="margin:auto;" class="user-signup">
-  	<tr><th>Email:</th><td><input type="email" id="email" name="email" required/></td></tr>
-		<tr><th>Motif:</th><td><textarea id="message" name="message" style="height: 100px;" required></textarea></td></tr>
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://t.me/+YzfFKS9lerVmZjQ8">
-    <input type="hidden" name="_subject" value="New Comer Message">
-		<tr><td colspan="2"><button class="signup" type="submit">Envoyer</button></td></tr>
-	</table>
-	</form>
-	</div>
-	</div>
-</div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AltruistMinute. Tous droits réservés.</p>
+        </div>
+    </footer>
 </body>
 </html>
