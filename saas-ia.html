@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:image" content="/favicon.png" />
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
+		<link rel="canonical" href="https://altruistminute.com/">
+		<meta property="og:url" content="https://altruistminute.com/" />
+    <title>Développez Votre SaaS IA – AltruistMinute.com</title>
+    <meta name="description" content="Transformez votre idée en SaaS IA avec notre expertise. Remplissez notre formulaire pour commencer.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --bg-color: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+						margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .features {
+            padding: 4rem 0;
+            background-color: white;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--bg-color);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .form-section {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1.5rem;
+        }
+
+        input[type="text"], input[type="email"], textarea, select {
+            padding: 0.8rem;
+            width: 500px;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 767px) {
+          input[type="text"], input[type="email"], textarea, select {
+              width: 300px;
+          }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h2>AltruistMinute</h2>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Développez Votre SaaS IA</h1>
+            <p>Transformez votre idée en SaaS IA avec notre expertise</p>
+            <a href="#form-section" class="cta-button">Commencez maintenant</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Expertise IA</h3>
+                    <p>Notre équipe est spécialisée dans les solutions IA sur mesure</p>
+                </div>
+                <div class="feature">
+                    <h3>Accompagnement complet</h3>
+                    <p>Nous vous accompagnons de l'idée au produit final</p>
+                </div>
+                <div class="feature">
+                    <h3>Solutions innovantes</h3>
+                    <p>Utilisez les dernières technologies IA pour votre SaaS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="form-section" class="form-section">
+        <div class="container">
+            <h2>Parlez-nous de votre projet SaaS IA</h2>
+            <p>Remplissez le formulaire ci-dessous pour commencer</p>
+            <form action="https://formsubmit.co/altruistminute@gmail.com" method="POST">
+                <input type="text" name="nom" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+                <textarea name="description_projet" placeholder="Description du projet" rows="7" required></textarea>
+                <select name="delais" required>
+                    <option value="" disabled selected>Délais souhaités</option>
+                    <option value="7j">7 jours</option>
+                    <option value="14j">14 jours</option>
+                    <option value="14j">21 jours</option>
+                    <option value="30j">30 jours</option>
+                </select>
+                <select name="budget" required>
+                    <option value="" disabled selected>Budget estimé</option>
+                    <option value="1000">1000 €</option>
+                    <option value="2000">3000 €</option>
+                    <option value="5000">5000 €</option>
+                    <option value="10000">7500+ €</option>
+                </select>
+                <button type="submit">Envoyer</button>
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://www.altruistminute.com/merci-saas">
+                <input type="hidden" name="_subject" value="Nouveau projet SaaS IA">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AltruistMinute. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
