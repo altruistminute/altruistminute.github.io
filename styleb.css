@@ -83,6 +83,36 @@ li {
     background-color: #555;
 }
 
+.floating-cta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #4a6bdf 0%, #2a4bb9 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+.floating-cta p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: white;
+    color: #2a4bb9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
 footer {
     margin-top: 50px;
     text-align: center;
